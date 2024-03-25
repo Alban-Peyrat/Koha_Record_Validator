@@ -1,0 +1,14 @@
+<fields>
+    <field tag="181">
+        <subfield code="c" startPosition="0" endPosition="2">
+            <value value="nda" name="A"/>
+            <value value="ndb" name="B"/>
+        </subfield>
+        <subfield code="b" startPosition="0">
+            <value value="f" name="Fake Appollo"/>
+        </subfield>
+        <subfield code="a">
+            <value value="lovecolor" name="Love Colored Master Spark"/>
+        </subfield>
+    </field>
+</fields>
