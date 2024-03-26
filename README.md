@@ -45,10 +45,10 @@ Then you need to set up the following environment variables :
   * Does not use any attributes
   * Contains `field` nodes
 * `field` nodes :
-  * Must have an attribute `tag`
+  * Must have an attribute `tag` (use `000` for the record label / leader)
   * Contains `subfield` nodes
 * `subfield` nodes :
-  * Must have an attribute `code`
+  * Must have an attribute `code` (use `@` for controlfields and the record label / leader)
   * Can have attribute `startPosition` and / or `endPosition` :
     * Position starts at `0`
     * Must contain only numbers (not even spaces)

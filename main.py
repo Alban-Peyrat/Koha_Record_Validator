@@ -55,6 +55,11 @@ class Authorized_Value(object):
 AUTHORISED_VALUES:Dict[str, Authorized_Value] = {}
 
 # ----- MARC Framework -----
+class Field_Type(Enum):
+    LEADER = 0
+    CONTROLFIELD = 1
+    DATAFIELD = 2
+
 class Subfield(object):
     # Koha 22.11, capturing groups :
     # 2 : tag, 4 : code, 6 : Label intranet
@@ -175,7 +180,7 @@ class Controled_Value(object):
             return None
         if self.start_position > -1 and self.end_position == -1:
             return self.start_position + 1
-        return self.end_position
+        return self.end_position + 1
 
 CONTROLED_VALUES:List[Controled_Value] = []
 
@@ -305,6 +310,48 @@ def trigger_error(index:int, id:str, error:Errors, txt:str, data:str, file:Error
     """Trigger an error"""
     file.write(Error_obj(index, id, error, txt, data).to_dict())
 
+# ----- Subfield analysis -----
+def subfield_analysis(field:pymarc.field.Field, code:str, val:str, field_type:Field_Type):
+    """Subfield analysis (field can only be a str if iot's the leader)"""
+    # Leader & control field management
+    tag = "000"
+    if field_type != Field_Type.LEADER:
+        tag = field.tag
+    if field_type in [Field_Type.CONTROLFIELD, Field_Type.LEADER]:
+        code = "@"
+    
+    # get mapepd field
+    subf_obj = get_subfield_from_tag_code(tag, code)
+    # Skip if unmapped field (already an errior at this point)
+    if not subf_obj:
+        return
+
+    # Empty subfield
+    if val == "":
+        trigger_error(index, record_id, Errors.EMPTY_SUBFIELD, f"{tag} ${code}", str(field), ERRORS_FILE)
+    # Whitespace only subfield content
+    elif re.match("^\s+$", val):
+        trigger_error(index, record_id, Errors.SUBFIELD_CONTENT_IS_ONLY_WHITESPACE, f"{tag} ${code}", str(field), ERRORS_FILE)
+
+    # Authorised values
+    if subf_obj.uses_authorized_values():
+        if not get_auth_val_from_id(subf_obj.auth_val).is_valid_val(val):
+            trigger_error(index, record_id, Errors.ILLEGAL_AUTHORIZED_VALUE, f"{tag} ${code} ({subf_obj.auth_val})", val, ERRORS_FILE)
+    
+    # Controled values
+    for cont_val in get_controled_values_for_tag_and_code(tag, code):
+        extracted_val = val[cont_val.get_start_position():cont_val.get_end_position()]
+        if not cont_val.is_valid_val(extracted_val):
+            position_err_msg = ""
+            if not cont_val.get_start_position():
+                pass
+            elif cont_val.get_start_position() + 1 == cont_val.get_end_position():
+                position_err_msg = f"position : {cont_val.get_start_position()}"
+            else:
+                position_err_msg = f"position : {cont_val.get_start_position()}-{cont_val.get_end_position()-1}"
+            trigger_error(index, record_id, Errors.ILLEGAL_CONTROLED_VALUE, f"{tag} ${code} {position_err_msg}", extracted_val, ERRORS_FILE)
+
+
 # ---------- Preparing Main ----------
 MARC_READER = pymarc.MARCReader(open(RECORDS_FILE_PATH, 'rb'), to_unicode=True, force_utf8=True) # DON'T FORGET ME
 ERRORS_FILE = Error_File(ERRORS_FILE_PATH) # DON'T FORGET ME
@@ -397,9 +444,13 @@ for index, record in enumerate(MARC_READER):
             if mandatory_subf.code not in field.subfields_as_dict():
                 trigger_error(index, record_id, Errors.MISSING_MANDATORY_SUBFIELD, f"{mandatory_subf.tag} ${mandatory_subf.code}", str(field), ERRORS_FILE)
 
-    # Unmapped fields
+    # Leader analysis
+    subfield_analysis(record.leader, "", record.leader, Field_Type.LEADER)
+
+    # Field analysis
     for field in record.fields:
         field:pymarc.field.Field # VS PLEASE DETECT THE TYPE AAAAAAAAAAAAAAAAAh
+        # Unmapped fields
         if not is_mapped_field(field.tag):
             trigger_error(index, record_id, Errors.UNMAPPED_FIELD, field.tag, str(field), ERRORS_FILE)
             continue #Skip to next field
@@ -414,32 +465,14 @@ for index, record in enumerate(MARC_READER):
             if not get_subfield_from_tag_code(field.tag, code).repeatable and len(field.subfields_as_dict()[code]) > 1:
                 trigger_error(index, record_id, Errors.NON_REPEATABLE_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
         
-        # Subfield content analysis
+        # Controlfield content analysis
+        if field.is_control_field():
+            subfield_analysis(field, "", field.data, Field_Type.DATAFIELD)
+            continue # No need to end the script
+
+        # Datfield subfield content analysis
         for index in range(0, len(field.subfields), 2):
-            code = field.subfields[index]
-            val = field.subfields[index+1]
-            subf_obj = get_subfield_from_tag_code(field.tag, code)
-            # Skip if unmapped field (already an errior at this point)
-            if not subf_obj:
-                continue
-
-            # Empty subfield
-            if val == "":
-                trigger_error(index, record_id, Errors.EMPTY_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
-            # Whitespace only subfield content
-            elif re.match("^\s+$", val):
-                trigger_error(index, record_id, Errors.SUBFIELD_CONTENT_IS_ONLY_WHITESPACE, f"{field.tag} ${code}", str(field), ERRORS_FILE)
-
-            # Authorised values
-            if subf_obj.uses_authorized_values():
-                if not get_auth_val_from_id(subf_obj.auth_val).is_valid_val(val):
-                    trigger_error(index, record_id, Errors.ILLEGAL_AUTHORIZED_VALUE, f"{field.tag} ${code} ({subf_obj.auth_val})", val, ERRORS_FILE)
-            
-            # Controled values
-            for cont_val in get_controled_values_for_tag_and_code(field.tag, code):
-                extracted_val = val[cont_val.get_start_position():cont_val.get_end_position()]
-                if not cont_val.is_valid_val(extracted_val):
-                    trigger_error(index, record_id, Errors.ILLEGAL_CONTROLED_VALUE, f"{field.tag} ${code}", extracted_val, ERRORS_FILE)
+            subfield_analysis(field, field.subfields[index], field.subfields[index+1], Field_Type.DATAFIELD)
 
 MARC_READER.close()
 ERRORS_FILE.close()

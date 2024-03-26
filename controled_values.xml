@@ -1,14 +1,935 @@
 <fields>
-    <field tag="181">
-        <subfield code="c" startPosition="0" endPosition="2">
-            <value value="nda" name="A"/>
-            <value value="ndb" name="B"/>
+    <field tag="000">
+        <subfield code="@" startPosition="5">
+            <value value="c" name="Corrected record"/>
+            <value value="d" name="Deleted record"/>
+            <value value="n" name="New record"/>
+            <value value="o" name="Previously issued higher level record"/>
+            <value value="p" name="Previously issued as an incomplete, pre-publication record"/>
         </subfield>
-        <subfield code="b" startPosition="0">
-            <value value="f" name="Fake Appollo"/>
+        <subfield code="@" startPosition="6">
+            <value value="a" name="Language materials, except manuscript"/>
+            <value value="b" name="Language materials, manuscript"/>
+            <value value="c" name="Notated music, except manuscript"/>
+            <value value="d" name="Notated music, manuscript"/>
+            <value value="e" name="Cartographic resources, except manuscript"/>
+            <value value="f" name="Cartographic resources, manuscript"/>
+            <value value="g" name="Projected and video resources"/>
+            <value value="i" name="Sound recordings, non-musical"/>
+            <value value="j" name="Sound recordings, musical"/>
+            <value value="k" name="Two-dimensional graphics"/>
+            <value value="l" name="Electronic resource"/>
+            <value value="m" name="Multimedia"/>
+            <value value="r" name="Three-dimensional artefacts"/>
+        </subfield>
+        <subfield code="@" startPosition="7">
+            <value value="a" name="Analytic (component part)"/>
+            <value value="i" name="Integrating resource"/>
+            <value value="m" name="Monographic"/>
+            <value value="s" name="Serial"/>
+            <value value="c" name="Collection"/>
+        </subfield>
+        <subfield code="@" startPosition="8">
+            <value value="#" name="Hierarchical relationship undefined"/>
+            <value value="0" name="No hierarchical relationship"/>
+            <value value="1" name="Highest level record"/>
+            <value value="2" name="Record below highest level (all levels below)"/>
+        </subfield>
+        <subfield code="@" startPosition="9">
+            <value value="#" name="No specified type"/>
+            <value value="a" name="Archival"/>
+            <value value="m" name="Museum"/>
+        </subfield>
+        <subfield code="@" startPosition="10">
+            <value value="2" name="[Invariable in UNIMARC]"/>
+        </subfield>
+        <subfield code="@" startPosition="11">
+            <value value="2" name="[Invariable in UNIMARC]"/>
+        </subfield>
+        <subfield code="@" startPosition="17">
+            <value value=" " name="Full level"/>
+            <value value="1" name="Sublevel 1"/>
+            <value value="2" name="Sublevel 2"/>
+            <value value="3" name="Sublevel 3"/>
+        </subfield>
+        <subfield code="@" startPosition="18">
+            <value value=" " name="Record is in full ISBD"/>
+            <value value="i" name="Record is in partial or incomplete ISDB form"/>
+            <value value="n" name="Record is in non-ISBD form"/>
+            <value value="x" name="ISBD provisions are not applicable to the type of resource (e.g., unpublished resources)"/>
+        </subfield>
+        <subfield code="@" startPosition="19">
+            <value value=" " name="--- [Undefined] ---"/>
+        </subfield>
+        <subfield code="@" startPosition="20">
+            <value value="4" name="[Invariable in UNIMARC]"/>
+        </subfield>
+        <subfield code="@" startPosition="21">
+            <value value="5" name="[Invariable in UNIMARC]"/>
+        </subfield>
+        <subfield code="@" startPosition="22">
+            <value value="0" name="[Invariable in UNIMARC]"/>
+        </subfield>
+        <subfield code="@" startPosition="23">
+            <value value=" " name="--- [Undefined] ---"/>
+        </subfield>
+    </field>
+    <field tag="100">
+        <subfield code="a" startPosition="8">
+            <value value="a" name="Currently published continuing resource"/>
+            <value value="b" name="Continuing resource no longer being published"/>
+            <value value="c" name="Continuing resource of unknown status"/>
+            <value value="d" name="Monograph complete when issued, or issued within one calendar year"/>
+            <value value="e" name="Reproduction of a document"/>
+            <value value="f" name="Monograph, date of publication uncertain"/>
+            <value value="g" name="Monograph whose publication continues for more than a year"/>
+            <value value="h" name="Monograph with both actual and copyright / privilege date"/>
+            <value value="i" name="Monograph with both release / issue date and production date"/>
+            <value value="j" name="Document with detailed date of publication"/>
+            <value value="k" name="Monograph published in a certain year and printed in a different year"/>
+            <value value="l" name="Inclusive dates of collection"/>
+            <value value="u" name="Date(s) of publication unknown"/>
+        </subfield>
+        <subfield code="a" startPosition="17">
+            <value value="a" name="Juvenile, general"/>
+            <value value="b" name="Pre-primary, ages 0-5"/>
+            <value value="c" name="Primary, ages 5-10"/>
+            <value value="d" name="Children, ages 9-14"/>
+            <value value="e" name="Young adult, ages 14-20"/>
+            <value value="k" name="Adult, serious"/>
+            <value value="m" name="Adult, general"/>
+            <value value="u" name="Unknown"/>
+            <value value="x" name="Not applicable"/>
+            <value value=" " name="--- Unused position ---"/>
+        </subfield>
+        <subfield code="a" startPosition="18">
+            <value value="a" name="Juvenile, general"/>
+            <value value="b" name="Pre-primary, ages 0-5"/>
+            <value value="c" name="Primary, ages 5-10"/>
+            <value value="d" name="Children, ages 9-14"/>
+            <value value="e" name="Young adult, ages 14-20"/>
+            <value value="k" name="Adult, serious"/>
+            <value value="m" name="Adult, general"/>
+            <value value="u" name="Unknown"/>
+            <value value=" " name="--- Unused position ---"/>
+        </subfield>
+        <subfield code="a" startPosition="19">
+            <value value="a" name="Juvenile, general"/>
+            <value value="b" name="Pre-primary, ages 0-5"/>
+            <value value="c" name="Primary, ages 5-10"/>
+            <value value="d" name="Children, ages 9-14"/>
+            <value value="e" name="Young adult, ages 14-20"/>
+            <value value="k" name="Adult, serious"/>
+            <value value="m" name="Adult, general"/>
+            <value value="u" name="Unknown"/>
+            <value value=" " name="--- Unused position ---"/>
+        </subfield>
+        <subfield code="a" startPosition="20">
+            <value value="a" name="Federal / national"/>
+            <value value="b" name="State / province"/>
+            <value value="c" name="County / department"/>
+            <value value="d" name="Local (munucipal, etc.)"/>
+            <value value="e" name="Multi-local (interstate departments, etc. below the national level)"/>
+            <value value="f" name="Intergovernmental"/>
+            <value value="g" name="Government in exile or clandestine"/>
+            <value value="h" name="Level not determined"/>
+            <value value="u" name="Unknown"/>
+            <value value="y" name="Not a government publication"/>
+            <value value="z" name="Other government level"/>
+        </subfield>
+        <subfield code="a" startPosition="21">
+            <value value="0" name="Unmodified record"/>
+            <value value="1" name="Modified record"/>
+        </subfield>
+        <subfield code="a" startPosition="22" endPosition="24">
+            <value value="aar" name="Afar"/>
+            <value value="abk" name="Abkhazian"/>
+            <value value="ace" name="Achinese"/>
+            <value value="ach" name="Acoli"/>
+            <value value="ada" name="Adangme"/>
+            <value value="ady" name="Adyghe; Adygei"/>
+            <value value="afa" name="Afro-Asiatic languages"/>
+            <value value="afh" name="Afrihili"/>
+            <value value="afr" name="Afrikaans"/>
+            <value value="ain" name="Ainu"/>
+            <value value="aka" name="Akan"/>
+            <value value="akk" name="Akkadian"/>
+            <value value="alb" name="Albanian"/>
+            <value value="ale" name="Aleut"/>
+            <value value="alg" name="Algonquian languages"/>
+            <value value="alt" name="Southern Altai"/>
+            <value value="amh" name="Amharic"/>
+            <value value="ang" name="English, Old (ca.450-1100)"/>
+            <value value="anp" name="Angika"/>
+            <value value="apa" name="Apache languages"/>
+            <value value="ara" name="Arabic"/>
+            <value value="arc" name="Official Aramaic (700-300 BCE); Imperial Aramaic (700-300 BCE)"/>
+            <value value="arg" name="Aragonese"/>
+            <value value="arm" name="Armenian"/>
+            <value value="arn" name="Mapudungun; Mapuche"/>
+            <value value="arp" name="Arapaho"/>
+            <value value="art" name="Artificial languages"/>
+            <value value="arw" name="Arawak"/>
+            <value value="asm" name="Assamese"/>
+            <value value="ast" name="Asturian; Bable; Leonese; Asturleonese"/>
+            <value value="ath" name="Athapascan languages"/>
+            <value value="aus" name="Australian languages"/>
+            <value value="ava" name="Avaric"/>
+            <value value="ave" name="Avestan"/>
+            <value value="awa" name="Awadhi"/>
+            <value value="aym" name="Aymara"/>
+            <value value="aze" name="Azerbaijani"/>
+            <value value="bad" name="Banda languages"/>
+            <value value="bai" name="Bamileke languages"/>
+            <value value="bak" name="Bashkir"/>
+            <value value="bal" name="Baluchi"/>
+            <value value="bam" name="Bambara"/>
+            <value value="ban" name="Balinese"/>
+            <value value="baq" name="Basque"/>
+            <value value="bas" name="Basa"/>
+            <value value="bat" name="Baltic languages"/>
+            <value value="bej" name="Beja; Bedawiyet"/>
+            <value value="bel" name="Belarusian"/>
+            <value value="bem" name="Bemba"/>
+            <value value="ben" name="Bengali"/>
+            <value value="ber" name="Berber languages"/>
+            <value value="bho" name="Bhojpuri"/>
+            <value value="bih" name="Bihari languages"/>
+            <value value="bik" name="Bikol"/>
+            <value value="bin" name="Bini; Edo"/>
+            <value value="bis" name="Bislama"/>
+            <value value="bla" name="Siksika"/>
+            <value value="bnt" name="Bantu languages"/>
+            <value value="bos" name="Bosnian"/>
+            <value value="bra" name="Braj"/>
+            <value value="bre" name="Breton"/>
+            <value value="btk" name="Batak languages"/>
+            <value value="bua" name="Buriat"/>
+            <value value="bug" name="Buginese"/>
+            <value value="bul" name="Bulgarian"/>
+            <value value="bur" name="Burmese"/>
+            <value value="byn" name="Blin; Bilin"/>
+            <value value="cad" name="Caddo"/>
+            <value value="cai" name="Central American Indian languages"/>
+            <value value="car" name="Galibi Carib"/>
+            <value value="cat" name="Catalan; Valencian"/>
+            <value value="cau" name="Caucasian languages"/>
+            <value value="ceb" name="Cebuano"/>
+            <value value="cel" name="Celtic languages"/>
+            <value value="cha" name="Chamorro"/>
+            <value value="chb" name="Chibcha"/>
+            <value value="che" name="Chechen"/>
+            <value value="chg" name="Chagatai"/>
+            <value value="chi" name="Chinese"/>
+            <value value="chk" name="Chuukese"/>
+            <value value="chm" name="Mari"/>
+            <value value="chn" name="Chinook jargon"/>
+            <value value="cho" name="Choctaw"/>
+            <value value="chp" name="Chipewyan; Dene Suline"/>
+            <value value="chr" name="Cherokee"/>
+            <value value="chu" name="Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic"/>
+            <value value="chv" name="Chuvash"/>
+            <value value="chy" name="Cheyenne"/>
+            <value value="cmc" name="Chamic languages"/>
+            <value value="cnr" name="Montenegrin"/>
+            <value value="cop" name="Coptic"/>
+            <value value="cor" name="Cornish"/>
+            <value value="cos" name="Corsican"/>
+            <value value="cpe" name="Creoles and pidgins, English based"/>
+            <value value="cpf" name="Creoles and pidgins, French-based"/>
+            <value value="cpp" name="Creoles and pidgins, Portuguese-based"/>
+            <value value="cre" name="Cree"/>
+            <value value="crh" name="Crimean Tatar; Crimean Turkish"/>
+            <value value="crp" name="Creoles and pidgins"/>
+            <value value="csb" name="Kashubian"/>
+            <value value="cus" name="Cushitic languages"/>
+            <value value="cze" name="Czech"/>
+            <value value="dak" name="Dakota"/>
+            <value value="dan" name="Danish"/>
+            <value value="dar" name="Dargwa"/>
+            <value value="day" name="Land Dayak languages"/>
+            <value value="del" name="Delaware"/>
+            <value value="den" name="Slave (Athapascan)"/>
+            <value value="dgr" name="Dogrib"/>
+            <value value="din" name="Dinka"/>
+            <value value="div" name="Divehi; Dhivehi; Maldivian"/>
+            <value value="doi" name="Dogri"/>
+            <value value="dra" name="Dravidian languages"/>
+            <value value="dsb" name="Lower Sorbian"/>
+            <value value="dua" name="Duala"/>
+            <value value="dum" name="Dutch, Middle (ca.1050-1350)"/>
+            <value value="dut" name="Dutch; Flemish"/>
+            <value value="dyu" name="Dyula"/>
+            <value value="dzo" name="Dzongkha"/>
+            <value value="efi" name="Efik"/>
+            <value value="egy" name="Egyptian (Ancient)"/>
+            <value value="eka" name="Ekajuk"/>
+            <value value="elx" name="Elamite"/>
+            <value value="eng" name="English"/>
+            <value value="enm" name="English, Middle (1100-1500)"/>
+            <value value="epo" name="Esperanto"/>
+            <value value="est" name="Estonian"/>
+            <value value="ewe" name="Ewe"/>
+            <value value="ewo" name="Ewondo"/>
+            <value value="fan" name="Fang"/>
+            <value value="fao" name="Faroese"/>
+            <value value="fat" name="Fanti"/>
+            <value value="fij" name="Fijian"/>
+            <value value="fil" name="Filipino; Pilipino"/>
+            <value value="fin" name="Finnish"/>
+            <value value="fiu" name="Finno-Ugrian languages"/>
+            <value value="fon" name="Fon"/>
+            <value value="fre" name="French"/>
+            <value value="frm" name="French, Middle (ca.1400-1600)"/>
+            <value value="fro" name="French, Old (842-ca.1400)"/>
+            <value value="frr" name="Northern Frisian"/>
+            <value value="frs" name="Eastern Frisian"/>
+            <value value="fry" name="Western Frisian"/>
+            <value value="ful" name="Fulah"/>
+            <value value="fur" name="Friulian"/>
+            <value value="gaa" name="Ga"/>
+            <value value="gay" name="Gayo"/>
+            <value value="gba" name="Gbaya"/>
+            <value value="gem" name="Germanic languages"/>
+            <value value="geo" name="Georgian"/>
+            <value value="ger" name="German"/>
+            <value value="gez" name="Geez"/>
+            <value value="gil" name="Gilbertese"/>
+            <value value="gla" name="Gaelic; Scottish Gaelic"/>
+            <value value="gle" name="Irish"/>
+            <value value="glg" name="Galician"/>
+            <value value="glv" name="Manx"/>
+            <value value="gmh" name="German, Middle High (ca.1050-1500)"/>
+            <value value="goh" name="German, Old High (ca.750-1050)"/>
+            <value value="gon" name="Gondi"/>
+            <value value="gor" name="Gorontalo"/>
+            <value value="got" name="Gothic"/>
+            <value value="grb" name="Grebo"/>
+            <value value="grc" name="Greek, Ancient (to 1453)"/>
+            <value value="gre" name="Greek, Modern (1453-)"/>
+            <value value="grn" name="Guarani"/>
+            <value value="gsw" name="Swiss German; Alemannic; Alsatian"/>
+            <value value="guj" name="Gujarati"/>
+            <value value="gwi" name="Gwich'in"/>
+            <value value="hai" name="Haida"/>
+            <value value="hat" name="Haitian; Haitian Creole"/>
+            <value value="hau" name="Hausa"/>
+            <value value="haw" name="Hawaiian"/>
+            <value value="heb" name="Hebrew"/>
+            <value value="her" name="Herero"/>
+            <value value="hil" name="Hiligaynon"/>
+            <value value="him" name="Himachali languages; Western Pahari languages"/>
+            <value value="hin" name="Hindi"/>
+            <value value="hit" name="Hittite"/>
+            <value value="hmn" name="Hmong; Mong"/>
+            <value value="hmo" name="Hiri Motu"/>
+            <value value="hrv" name="Croatian"/>
+            <value value="hsb" name="Upper Sorbian"/>
+            <value value="hun" name="Hungarian"/>
+            <value value="hup" name="Hupa"/>
+            <value value="iba" name="Iban"/>
+            <value value="ibo" name="Igbo"/>
+            <value value="ice" name="Icelandic"/>
+            <value value="ido" name="Ido"/>
+            <value value="iii" name="Sichuan Yi; Nuosu"/>
+            <value value="ijo" name="Ijo languages"/>
+            <value value="iku" name="Inuktitut"/>
+            <value value="ile" name="Interlingue; Occidental"/>
+            <value value="ilo" name="Iloko"/>
+            <value value="ina" name="Interlingua (International Auxiliary Language Association)"/>
+            <value value="inc" name="Indic languages"/>
+            <value value="ind" name="Indonesian"/>
+            <value value="ine" name="Indo-European languages"/>
+            <value value="inh" name="Ingush"/>
+            <value value="ipk" name="Inupiaq"/>
+            <value value="ira" name="Iranian languages"/>
+            <value value="iro" name="Iroquoian languages"/>
+            <value value="ita" name="Italian"/>
+            <value value="jav" name="Javanese"/>
+            <value value="jbo" name="Lojban"/>
+            <value value="jpn" name="Japanese"/>
+            <value value="jpr" name="Judeo-Persian"/>
+            <value value="jrb" name="Judeo-Arabic"/>
+            <value value="kaa" name="Kara-Kalpak"/>
+            <value value="kab" name="Kabyle"/>
+            <value value="kac" name="Kachin; Jingpho"/>
+            <value value="kal" name="Kalaallisut; Greenlandic"/>
+            <value value="kam" name="Kamba"/>
+            <value value="kan" name="Kannada"/>
+            <value value="kar" name="Karen languages"/>
+            <value value="kas" name="Kashmiri"/>
+            <value value="kau" name="Kanuri"/>
+            <value value="kaw" name="Kawi"/>
+            <value value="kaz" name="Kazakh"/>
+            <value value="kbd" name="Kabardian"/>
+            <value value="kha" name="Khasi"/>
+            <value value="khi" name="Khoisan languages"/>
+            <value value="khm" name="Central Khmer"/>
+            <value value="kho" name="Khotanese; Sakan"/>
+            <value value="kik" name="Kikuyu; Gikuyu"/>
+            <value value="kin" name="Kinyarwanda"/>
+            <value value="kir" name="Kirghiz; Kyrgyz"/>
+            <value value="kmb" name="Kimbundu"/>
+            <value value="kok" name="Konkani"/>
+            <value value="kom" name="Komi"/>
+            <value value="kon" name="Kongo"/>
+            <value value="kor" name="Korean"/>
+            <value value="kos" name="Kosraean"/>
+            <value value="kpe" name="Kpelle"/>
+            <value value="krc" name="Karachay-Balkar"/>
+            <value value="krl" name="Karelian"/>
+            <value value="kro" name="Kru languages"/>
+            <value value="kru" name="Kurukh"/>
+            <value value="kua" name="Kuanyama; Kwanyama"/>
+            <value value="kum" name="Kumyk"/>
+            <value value="kur" name="Kurdish"/>
+            <value value="kut" name="Kutenai"/>
+            <value value="lad" name="Ladino"/>
+            <value value="lah" name="Lahnda"/>
+            <value value="lam" name="Lamba"/>
+            <value value="lao" name="Lao"/>
+            <value value="lat" name="Latin"/>
+            <value value="lav" name="Latvian"/>
+            <value value="lez" name="Lezghian"/>
+            <value value="lim" name="Limburgan; Limburger; Limburgish"/>
+            <value value="lin" name="Lingala"/>
+            <value value="lit" name="Lithuanian"/>
+            <value value="lol" name="Mongo"/>
+            <value value="loz" name="Lozi"/>
+            <value value="ltz" name="Luxembourgish; Letzeburgesch"/>
+            <value value="lua" name="Luba-Lulua"/>
+            <value value="lub" name="Luba-Katanga"/>
+            <value value="lug" name="Ganda"/>
+            <value value="lui" name="Luiseno"/>
+            <value value="lun" name="Lunda"/>
+            <value value="luo" name="Luo (Kenya and Tanzania)"/>
+            <value value="lus" name="Lushai"/>
+            <value value="mac" name="Macedonian"/>
+            <value value="mad" name="Madurese"/>
+            <value value="mag" name="Magahi"/>
+            <value value="mah" name="Marshallese"/>
+            <value value="mai" name="Maithili"/>
+            <value value="mak" name="Makasar"/>
+            <value value="mal" name="Malayalam"/>
+            <value value="man" name="Mandingo"/>
+            <value value="mao" name="Maori"/>
+            <value value="map" name="Austronesian languages"/>
+            <value value="mar" name="Marathi"/>
+            <value value="mas" name="Masai"/>
+            <value value="may" name="Malay"/>
+            <value value="mdf" name="Moksha"/>
+            <value value="mdr" name="Mandar"/>
+            <value value="men" name="Mende"/>
+            <value value="mga" name="Irish, Middle (900-1200)"/>
+            <value value="mic" name="Mi'kmaq; Micmac"/>
+            <value value="min" name="Minangkabau"/>
+            <value value="mis" name="Uncoded languages"/>
+            <value value="mkh" name="Mon-Khmer languages"/>
+            <value value="mlg" name="Malagasy"/>
+            <value value="mlt" name="Maltese"/>
+            <value value="mnc" name="Manchu"/>
+            <value value="mni" name="Manipuri"/>
+            <value value="mno" name="Manobo languages"/>
+            <value value="moh" name="Mohawk"/>
+            <value value="mon" name="Mongolian"/>
+            <value value="mos" name="Mossi"/>
+            <value value="mul" name="Multiple languages"/>
+            <value value="mun" name="Munda languages"/>
+            <value value="mus" name="Creek"/>
+            <value value="mwl" name="Mirandese"/>
+            <value value="mwr" name="Marwari"/>
+            <value value="myn" name="Mayan languages"/>
+            <value value="myv" name="Erzya"/>
+            <value value="nah" name="Nahuatl languages"/>
+            <value value="nai" name="North American Indian languages"/>
+            <value value="nap" name="Neapolitan"/>
+            <value value="nau" name="Nauru"/>
+            <value value="nav" name="Navajo; Navaho"/>
+            <value value="nbl" name="Ndebele, South; South Ndebele"/>
+            <value value="nde" name="Ndebele, North; North Ndebele"/>
+            <value value="ndo" name="Ndonga"/>
+            <value value="nds" name="Low German; Low Saxon; German, Low; Saxon, Low"/>
+            <value value="nep" name="Nepali"/>
+            <value value="new" name="Nepal Bhasa; Newari"/>
+            <value value="nia" name="Nias"/>
+            <value value="nic" name="Niger-Kordofanian languages"/>
+            <value value="niu" name="Niuean"/>
+            <value value="nno" name="Norwegian Nynorsk; Nynorsk, Norwegian"/>
+            <value value="nob" name="Bokmål, Norwegian; Norwegian Bokmål"/>
+            <value value="nog" name="Nogai"/>
+            <value value="non" name="Norse, Old"/>
+            <value value="nor" name="Norwegian"/>
+            <value value="nqo" name="N'Ko"/>
+            <value value="nso" name="Pedi; Sepedi; Northern Sotho"/>
+            <value value="nub" name="Nubian languages"/>
+            <value value="nwc" name="Classical Newari; Old Newari; Classical Nepal Bhasa"/>
+            <value value="nya" name="Chichewa; Chewa; Nyanja"/>
+            <value value="nym" name="Nyamwezi"/>
+            <value value="nyn" name="Nyankole"/>
+            <value value="nyo" name="Nyoro"/>
+            <value value="nzi" name="Nzima"/>
+            <value value="oci" name="Occitan (post 1500)"/>
+            <value value="oji" name="Ojibwa"/>
+            <value value="ori" name="Oriya"/>
+            <value value="orm" name="Oromo"/>
+            <value value="osa" name="Osage"/>
+            <value value="oss" name="Ossetian; Ossetic"/>
+            <value value="ota" name="Turkish, Ottoman (1500-1928)"/>
+            <value value="oto" name="Otomian languages"/>
+            <value value="paa" name="Papuan languages"/>
+            <value value="pag" name="Pangasinan"/>
+            <value value="pal" name="Pahlavi"/>
+            <value value="pam" name="Pampanga; Kapampangan"/>
+            <value value="pan" name="Panjabi; Punjabi"/>
+            <value value="pap" name="Papiamento"/>
+            <value value="pau" name="Palauan"/>
+            <value value="peo" name="Persian, Old (ca.600-400 B.C.)"/>
+            <value value="per" name="Persian"/>
+            <value value="phi" name="Philippine languages"/>
+            <value value="phn" name="Phoenician"/>
+            <value value="pli" name="Pali"/>
+            <value value="pol" name="Polish"/>
+            <value value="pon" name="Pohnpeian"/>
+            <value value="por" name="Portuguese"/>
+            <value value="pra" name="Prakrit languages"/>
+            <value value="pro" name="Provençal, Old (to 1500); Occitan, Old (to 1500)"/>
+            <value value="pus" name="Pushto; Pashto"/>
+            <value value="qaa" name="Reserved for local use"/>
+            <value value="qtz" name="Reserved for local use"/>
+            <value value="que" name="Quechua"/>
+            <value value="raj" name="Rajasthani"/>
+            <value value="rap" name="Rapanui"/>
+            <value value="rar" name="Rarotongan; Cook Islands Maori"/>
+            <value value="roa" name="Romance languages"/>
+            <value value="roh" name="Romansh"/>
+            <value value="rom" name="Romany"/>
+            <value value="rum" name="Romanian; Moldavian; Moldovan"/>
+            <value value="run" name="Rundi"/>
+            <value value="rup" name="Aromanian; Arumanian; Macedo-Romanian"/>
+            <value value="rus" name="Russian"/>
+            <value value="sad" name="Sandawe"/>
+            <value value="sag" name="Sango"/>
+            <value value="sah" name="Yakut"/>
+            <value value="sai" name="South American Indian languages"/>
+            <value value="sal" name="Salishan languages"/>
+            <value value="sam" name="Samaritan Aramaic"/>
+            <value value="san" name="Sanskrit"/>
+            <value value="sas" name="Sasak"/>
+            <value value="sat" name="Santali"/>
+            <value value="scn" name="Sicilian"/>
+            <value value="sco" name="Scots"/>
+            <value value="sel" name="Selkup"/>
+            <value value="sem" name="Semitic languages"/>
+            <value value="sga" name="Irish, Old (to 900)"/>
+            <value value="sgn" name="Sign Languages"/>
+            <value value="shn" name="Shan"/>
+            <value value="sid" name="Sidamo"/>
+            <value value="sin" name="Sinhala; Sinhalese"/>
+            <value value="sio" name="Siouan languages"/>
+            <value value="sit" name="Sino-Tibetan languages"/>
+            <value value="sla" name="Slavic languages"/>
+            <value value="slo" name="Slovak"/>
+            <value value="slv" name="Slovenian"/>
+            <value value="sma" name="Southern Sami"/>
+            <value value="sme" name="Northern Sami"/>
+            <value value="smi" name="Sami languages"/>
+            <value value="smj" name="Lule Sami"/>
+            <value value="smn" name="Inari Sami"/>
+            <value value="smo" name="Samoan"/>
+            <value value="sms" name="Skolt Sami"/>
+            <value value="sna" name="Shona"/>
+            <value value="snd" name="Sindhi"/>
+            <value value="snk" name="Soninke"/>
+            <value value="sog" name="Sogdian"/>
+            <value value="som" name="Somali"/>
+            <value value="son" name="Songhai languages"/>
+            <value value="sot" name="Sotho, Southern"/>
+            <value value="spa" name="Spanish; Castilian"/>
+            <value value="srd" name="Sardinian"/>
+            <value value="srn" name="Sranan Tongo"/>
+            <value value="srp" name="Serbian"/>
+            <value value="srr" name="Serer"/>
+            <value value="ssa" name="Nilo-Saharan languages"/>
+            <value value="ssw" name="Swati"/>
+            <value value="suk" name="Sukuma"/>
+            <value value="sun" name="Sundanese"/>
+            <value value="sus" name="Susu"/>
+            <value value="sux" name="Sumerian"/>
+            <value value="swa" name="Swahili"/>
+            <value value="swe" name="Swedish"/>
+            <value value="syc" name="Classical Syriac"/>
+            <value value="syr" name="Syriac"/>
+            <value value="tah" name="Tahitian"/>
+            <value value="tai" name="Tai languages"/>
+            <value value="tam" name="Tamil"/>
+            <value value="tat" name="Tatar"/>
+            <value value="tel" name="Telugu"/>
+            <value value="tem" name="Timne"/>
+            <value value="ter" name="Tereno"/>
+            <value value="tet" name="Tetum"/>
+            <value value="tgk" name="Tajik"/>
+            <value value="tgl" name="Tagalog"/>
+            <value value="tha" name="Thai"/>
+            <value value="tib" name="Tibetan"/>
+            <value value="tig" name="Tigre"/>
+            <value value="tir" name="Tigrinya"/>
+            <value value="tiv" name="Tiv"/>
+            <value value="tkl" name="Tokelau"/>
+            <value value="tlh" name="Klingon; tlhIngan-Hol"/>
+            <value value="tli" name="Tlingit"/>
+            <value value="tmh" name="Tamashek"/>
+            <value value="tog" name="Tonga (Nyasa)"/>
+            <value value="ton" name="Tonga (Tonga Islands)"/>
+            <value value="tpi" name="Tok Pisin"/>
+            <value value="tsi" name="Tsimshian"/>
+            <value value="tsn" name="Tswana"/>
+            <value value="tso" name="Tsonga"/>
+            <value value="tuk" name="Turkmen"/>
+            <value value="tum" name="Tumbuka"/>
+            <value value="tup" name="Tupi languages"/>
+            <value value="tur" name="Turkish"/>
+            <value value="tut" name="Altaic languages"/>
+            <value value="tvl" name="Tuvalu"/>
+            <value value="twi" name="Twi"/>
+            <value value="tyv" name="Tuvinian"/>
+            <value value="udm" name="Udmurt"/>
+            <value value="uga" name="Ugaritic"/>
+            <value value="uig" name="Uighur; Uyghur"/>
+            <value value="ukr" name="Ukrainian"/>
+            <value value="umb" name="Umbundu"/>
+            <value value="und" name="Undetermined"/>
+            <value value="urd" name="Urdu"/>
+            <value value="uzb" name="Uzbek"/>
+            <value value="vai" name="Vai"/>
+            <value value="ven" name="Venda"/>
+            <value value="vie" name="Vietnamese"/>
+            <value value="vol" name="Volapük"/>
+            <value value="vot" name="Votic"/>
+            <value value="wak" name="Wakashan languages"/>
+            <value value="wal" name="Wolaitta; Wolaytta"/>
+            <value value="war" name="Waray"/>
+            <value value="was" name="Washo"/>
+            <value value="wel" name="Welsh"/>
+            <value value="wen" name="Sorbian languages"/>
+            <value value="wln" name="Walloon"/>
+            <value value="wol" name="Wolof"/>
+            <value value="xal" name="Kalmyk; Oirat"/>
+            <value value="xho" name="Xhosa"/>
+            <value value="yao" name="Yao"/>
+            <value value="yap" name="Yapese"/>
+            <value value="yid" name="Yiddish"/>
+            <value value="yor" name="Yoruba"/>
+            <value value="ypk" name="Yupik languages"/>
+            <value value="zap" name="Zapotec"/>
+            <value value="zbl" name="Blissymbols; Blissymbolics; Bliss"/>
+            <value value="zen" name="Zenaga"/>
+            <value value="zgh" name="Standard Moroccan Tamazight"/>
+            <value value="zha" name="Zhuang; Chuang"/>
+            <value value="znd" name="Zande languages"/>
+            <value value="zul" name="Zulu"/>
+            <value value="zun" name="Zuni"/>
+            <value value="zxx" name="No linguistic content; Not applicable"/>
+            <value value="zza" name="Zaza; Dimili; Dimli; Kirdki; Kirmanjki; Zazaki"/>
+        </subfield>
+        <subfield code="a" startPosition="25">
+            <value value="a" name="ISO transliteration scheme"/>
+            <value value="b" name="Other"/>
+            <value value="c" name="Multiple transliterations"/>
+            <value value="d" name="Transliteration table established by the national bibliographic agency"/>
+            <value value="e" name="Transliteration without any identified transliteration scheme"/>
+            <value value="f" name="Other identified transliteration scheme"/>
+            <value value="g" name="ALA-LC romanization table"/>
+            <value value="h" name="DIN transliteration scheme"/>
+            <value value="y" name="Non applicable"/>
+        </subfield>
+        <subfield code="a" startPosition="26" endPosition="27">
+            <value value="01" name="ISO 646, IRV version (basic Latin set)"/>
+            <value value="02" name="ISO Registration # 37 (basic Cyrillic set)"/>
+            <value value="03" name="ISO 5426 (extended Latin set)"/>
+            <value value="04" name="ISO 5427 (extended Cyrillic set)"/>
+            <value value="05" name="ISO 5428 (Greek set)"/>
+            <value value="06" name="ISO 6438 (African coded character set)"/>
+            <value value="07" name="ISO 10586 (Georgian set)"/>
+            <value value="08" name="ISO 8957 (Hebrew set) Table 1"/>
+            <value value="09" name="ISO 8957 (Hebrew set) Table 2"/>
+            <value value="10" name="[Reserved]"/>
+            <value value="11" name="ISO 5426-2 (Latin chharacters used in minor European languages and obsolete typography)"/>
+            <value value="50" name="ISO 10646 Level 3 (Unicode, UTF-8)"/>
+        </subfield>
+        <subfield code="a" startPosition="28" endPosition="29">
+            <value value="01" name="ISO 646, IRV version (basic Latin set)"/>
+            <value value="02" name="ISO Registration # 37 (basic Cyrillic set)"/>
+            <value value="03" name="ISO 5426 (extended Latin set)"/>
+            <value value="04" name="ISO 5427 (extended Cyrillic set)"/>
+            <value value="05" name="ISO 5428 (Greek set)"/>
+            <value value="06" name="ISO 6438 (African coded character set)"/>
+            <value value="07" name="ISO 10586 (Georgian set)"/>
+            <value value="08" name="ISO 8957 (Hebrew set) Table 1"/>
+            <value value="09" name="ISO 8957 (Hebrew set) Table 2"/>
+            <value value="10" name="[Reserved]"/>
+            <value value="11" name="ISO 5426-2 (Latin chharacters used in minor European languages and obsolete typography)"/>
+            <value value="50" name="ISO 10646 Level 3 (Unicode, UTF-8)"/>
+            <value value="  " name="--- Unused position ---"/>
+        </subfield>
+        <subfield code="a" startPosition="30" endPosition="31">
+            <value value="01" name="ISO 646, IRV version (basic Latin set)"/>
+            <value value="02" name="ISO Registration # 37 (basic Cyrillic set)"/>
+            <value value="03" name="ISO 5426 (extended Latin set)"/>
+            <value value="04" name="ISO 5427 (extended Cyrillic set)"/>
+            <value value="05" name="ISO 5428 (Greek set)"/>
+            <value value="06" name="ISO 6438 (African coded character set)"/>
+            <value value="07" name="ISO 10586 (Georgian set)"/>
+            <value value="08" name="ISO 8957 (Hebrew set) Table 1"/>
+            <value value="09" name="ISO 8957 (Hebrew set) Table 2"/>
+            <value value="10" name="[Reserved]"/>
+            <value value="11" name="ISO 5426-2 (Latin chharacters used in minor European languages and obsolete typography)"/>
+            <value value="50" name="ISO 10646 Level 3 (Unicode, UTF-8)"/>
+            <value value="  " name="--- Unused position ---"/>
+        </subfield>
+        <subfield code="a" startPosition="32" endPosition="33">
+            <value value="01" name="ISO 646, IRV version (basic Latin set)"/>
+            <value value="02" name="ISO Registration # 37 (basic Cyrillic set)"/>
+            <value value="03" name="ISO 5426 (extended Latin set)"/>
+            <value value="04" name="ISO 5427 (extended Cyrillic set)"/>
+            <value value="05" name="ISO 5428 (Greek set)"/>
+            <value value="06" name="ISO 6438 (African coded character set)"/>
+            <value value="07" name="ISO 10586 (Georgian set)"/>
+            <value value="08" name="ISO 8957 (Hebrew set) Table 1"/>
+            <value value="09" name="ISO 8957 (Hebrew set) Table 2"/>
+            <value value="10" name="[Reserved]"/>
+            <value value="11" name="ISO 5426-2 (Latin chharacters used in minor European languages and obsolete typography)"/>
+            <value value="50" name="ISO 10646 Level 3 (Unicode, UTF-8)"/>
+            <value value="  " name="--- Unused position ---"/>
+        </subfield>
+        <subfield code="a" startPosition="34" endPosition="35">
+            <value value="ba" name="Latin"/>
+            <value value="ca" name="Cyrillic"/>
+            <value value="da" name="Japanese - script unspecified (mixed scripts)"/>
+            <value value="db" name="Japanese - kanji"/>
+            <value value="dc" name="Japanese - kana"/>
+            <value value="ea" name="Chinese"/>
+            <value value="eb" name="Chinese - simplified variant"/>
+            <value value="ec" name="Chinese - traditional variant"/>
+            <value value="ed" name="Mongolian"/>
+            <value value="ee" name="Manchu"/>
+            <value value="ef" name="Yi"/>
+            <value value="eg" name="Naxi Dongba (Nakhi Tomba)"/>
+            <value value="eh" name="Naxi Geba"/>
+            <value value="fa" name="Arabic"/>
+            <value value="ga" name="Greek"/>
+            <value value="ha" name="Hebrew"/>
+            <value value="ia" name="Thai"/>
+            <value value="ib" name="Burmese"/>
+            <value value="ic" name="Khmer (Cambodian)"/>
+            <value value="id" name="Lao"/>
+            <value value="ie" name="Cham"/>
+            <value value="ja" name="Devanagari"/>
+            <value value="jb" name="Bengalese"/>
+            <value value="jc" name="Gujarati"/>
+            <value value="jd" name="Gurmukhi"/>
+            <value value="je" name="Odia (Oriya)"/>
+            <value value="jf" name="Tibetan"/>
+            <value value="jg" name="Newa (Newar)"/>
+            <value value="ka" name="Korean"/>
+            <value value="la" name="Tamil"/>
+            <value value="lb" name="Kannada"/>
+            <value value="lc" name="Malayalam"/>
+            <value value="ld" name="Sinhala (Sinhalese)"/>
+            <value value="le" name="Telugu"/>
+            <value value="lf" name="Grantha"/>
+            <value value="ma" name="Georgian"/>
+            <value value="mb" name="Armenian"/>
+            <value value="na" name="Ethiopic (Ge'ez)"/>
+            <value value="nb" name="Tifinagh (Berber)"/>
+            <value value="nc" name="N'ko"/>
+            <value value="oa" name="Syriac"/>
+            <value value="pa" name="Egyptian hierogryphs"/>
+            <value value="zz" name="Other"/>
+        </subfield>
+    </field>
+    <field tag="181">
+        <subfield code="2">
+            <value value="rdacontent"/>
+        </subfield>
+        <subfield code ="c">
+            <value value="crd" name="Cartographic dataset"/>
+            <value value="cri" name="Cartographic image"/>
+            <value value="crm" name="Cartographic moving image"/>
+            <value value="crt" name="Cartographic tactile image"/>
+            <value value="crn" name="Cartographic tactile three-dimensional form"/>
+            <value value="crf" name="Cartographic three-dimensional form"/>
+            <value value="cod" name="Computer dataset"/>
+            <value value="cop" name="Computer program"/>
+            <value value="ntv" name="Notated movement"/>
+            <value value="ntm" name="Notated music"/>
+            <value value="prm" name="Performed music"/>
+            <value value="snd" name="Sounds"/>
+            <value value="spw" name="Spoken word"/>
+            <value value="sti" name="Still image"/>
+            <value value="tci" name="Tactile image"/>
+            <value value="tcm" name="Tactile notated music"/>
+            <value value="tcn" name="Tactile notated movement"/>
+            <value value="tct" name="Tactile text"/>
+            <value value="tcf" name="Tactile three-dimensional form"/>
+            <value value="txt" name="Text"/>
+            <value value="tdf" name="Three-dimensional form"/>
+            <value value="tdm" name="Three-dimensional moving image"/>
+            <value value="tdi" name="Two-dimensional moving image"/>
+            <value value="xxx" name="Other"/>
+            <value value="zzz" name="Unspecified"/>
+        </subfield>
+    </field>
+    <field tag="182">
+        <subfield code="2">
+            <value value="rdamedia"/>
+        </subfield>
+        <subfield code="c">
+            <value value="s" name="Audio"/>
+            <value value="c" name="Computer"/>
+            <value value="h" name="Microform"/>
+            <value value="p" name="Microscopic"/>
+            <value value="g" name="Projected"/>
+            <value value="e" name="Stereographic"/>
+            <value value="n" name="Unmediated"/>
+            <value value="v" name="Video"/>
+            <value value="x" name="Other"/>
+            <value value="z" name="Unspecified"/>
+        </subfield>
+    </field>
+    <field tag="183">
+        <subfield code="2">
+            <value value="RDAfrCarrier"/>
         </subfield>
         <subfield code="a">
-            <value value="lovecolor" name="Love Colored Master Spark"/>
+            <value value="saa" name="Bande magnétique audio"/>
+            <value value="sac" name="Bande perforée pour instrument mécanique"/>
+            <value value="sbb" name="Bande TEFI"/>
+            <value value="seg" name="Blu-ray audio"/>
+            <value value="sab" name="Bobine de piste sonore"/>
+            <value value="sba" name="Cartouche audio"/>
+            <value value="sca" name="Cassette audio analogique"/>
+            <value value="scb" name="Cassette audio numérique"/>
+            <value value="sea" name="CD audio"/>
+            <value value="seb" name="CD-Extra"/>
+            <value value="sda" name="Cylindre phonographique"/>
+            <value value="sec" name="Disque audio"/>
+            <value value="sed" name="DVD audio"/>
+            <value value="see" name="Feuille acoustique"/>
+            <value value="sdb" name="Fil magnétique"/>
+            <value value="sef" name="MiniDisc"/>
+            <value value="sdc" name="Ruban métallique magnétique"/>
+            <value value="saz" name="Support audio (générique)"/>
+            <value value="szz" name="--- Support audio non spécifié ---"/>
+            <value value="gab" name="Bobine de film"/>
+            <value value="gac" name="Cartouche de film fixe"/>
+            <value value="gad" name="Diapositive"/>
+            <value value="gae" name="Film fixe"/>
+            <value value="gaf" name="Film fixe court"/>
+            <value value="gaz" name="Film ou transparent (générique)"/>
+            <value value="gba" name="Plaque de lanterne magique"/>
+            <value value="gag" name="Rouleau de film"/>
+            <value value="gah" name="Transparent pour rétroprojecteur"/>
+            <value value="gzz" name="--- Support pour les images projetées non spécifié ---"/>
+            <value value="cda" name="Blu-ray disc"/>
+            <value value="cdb" name="Blu-ray disc propriétaire"/>
+            <value value="caa" name="Bobine de bande informatique"/>
+            <value value="cba" name="Carte mémoire"/>
+            <value value="cbb" name="Carte mémoire propriétaire"/>
+            <value value="cca" name="Cartouche de jeu"/>
+            <value value="cab" name="Cartouche informatique"/>
+            <value value="cac" name="Cassette de bande informatique"/>
+            <value value="cdc" name="CD-I"/>
+            <value value="cdd" name="CD-Photo"/>
+            <value value="cde" name="CD-ROM"/>
+            <value value="cdf" name="CD-ROM propriétaire"/>
+            <value value="cdg" name="CDTV"/>
+            <value value="cea" name="Clé de licence de produit numérique"/>
+            <value value="cad" name="Dispositif électronique autonome"/>
+            <value value="cdh" name="Disque optique hybride"/>
+            <value value="cdi" name="Disquette"/>
+            <value value="cdj" name="Disquette propriétaire"/>
+            <value value="cdk" name="DVD-ROM"/>
+            <value value="cdl" name="DVD-ROM propriétaire"/>
+            <value value="cae" name="Mémoire USB"/>
+            <value value="caf" name="Puce RFID"/>
+            <value value="ceb" name="Ressource dématérialisée"/>
+            <value value="caz" name="Support numérique manipulable (générique)"/>
+            <value value="czz" name="--- Support électronique non spécifié ---"/>
+            <value value="hba" name="Bande de microfilm"/>
+            <value value="hbb" name="Bobine de microfilm"/>
+            <value value="haa" name="Carte à fenêtre"/>
+            <value value="hbc" name="Cartouche de microfilm"/>
+            <value value="hab" name="Cassette de microfiches"/>
+            <value value="hbd" name="Cassette de microfilm"/>
+            <value value="had" name="Microfiche"/>
+            <value value="hbz" name="Microfilm"/>
+            <value value="haz" name="Microforme (générique)"/>
+            <value value="hac" name="Micro-opaque"/>
+            <value value="hbe" name="Rouleau de microfilm"/>
+            <value value="hzz" name="--- Support pour les microformes non spécifié ---"/>
+            <value value="paa" name="Lame pour microscope"/>
+            <value value="pzz" name="--- Support matériels microscopiques non spécifié ---"/>
+            <value value="nea" name="Appareil (terme générique)"/>
+            <value value="ndb" name="Autocollant"/>
+            <value value="nba" name="Bande de film photographique"/>
+            <value value="nbb" name="Bobine de film photographique"/>
+            <value value="ngb" name="Brochure"/>
+            <value value="naa" name="Carte"/>
+            <value value="ndc" name="Dépliant"/>
+            <value value="ngc" name="Fascicule"/>
+            <value value="nda" name="Feuille"/>
+            <value value="nbz" name="Film photographique (terme générique)"/>
+            <value value="neb" name="Globe"/>
+            <value value="nec" name="Kit"/>
+            <value value="ned" name="Maquette"/>
+            <value value="nef" name="Matrice"/>
+            <value value="nez" name="Objet"/>
+            <value value="neg" name="Objet numismatique"/>
+            <value value="neh" name="Panneau"/>
+            <value value="nei" name="Panneau dépliant"/>
+            <value value="nej" name="Plaque"/>
+            <value value="nek" name="Plaque photographique"/>
+            <value value="nel" name="Plateau de jeu"/>
+            <value value="nfa" name="Rouleau"/>
+            <value value="nbc" name="Rouleau de film photographique"/>
+            <value value="nca" name="Tableau à feuilles mobiles"/>
+            <value value="ndd" name="Transparent"/>
+            <value value="nga" name="Volume"/>
+            <value value="nzz" name="--- Support sans médiation non spécifié ---"/>
+            <value value="eaa" name="Carte stéréoscopique"/>
+            <value value="eab" name="Disque stéréoscopique"/>
+            <value value="eac" name="Plaque stéréoscopique"/>
+            <value value="ezz" name="--- Support matériel stéréoscopique non spécifié ---"/>
+            <value value="vaa" name="Bande vidéo"/>
+            <value value="vca" name="Blu-ray vidéo"/>
+            <value value="vba" name="Cassette vidéo"/>
+            <value value="vbb" name="Cassette vidéo numérique"/>
+            <value value="vcb" name="Disque vidéo"/>
+            <value value="vcc" name="DVD vidéo"/>
+            <value value="vcd" name="HD DVD"/>
+            <value value="vaz" name="Vidéo (Terme générique)"/>
+            <value value="vce" name="Vidéo CD"/>
+            <value value="vzz" name="--- Support vidéo non spécifié ---"/>
+        </subfield>
+    </field>
+    <field tag="606">
+        <subfield code="2">
+            <value value="rameau" name="RAMEAU"/>
+        </subfield>
+    </field>
+    <field tag="615">
+        <subfield code="2">
+            <value value="ENSP" name="École nationale suéprieure de paysage"/>
+        </subfield>
+    </field>
+    <field tag="971">
+        <subfield code="9">
+            <value value="Kentika_ENSP" name="Kentika - École nationale suéprieure de paysage"/>
+        </subfield>
+    </field>
+    <field tag="972">
+        <subfield code="9">
+            <value value="Kentika_ENSP" name="Kentika - École nationale suéprieure de paysage"/>
         </subfield>
     </field>
 </fields>
