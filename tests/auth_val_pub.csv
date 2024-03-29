@@ -1,0 +1,1125 @@
+category;authorised_value;lib;lib_opac
+ETAT;0;" Empruntable";
+ETAT;1;"En reliure";
+ETAT;3;"Exclu du prêt";
+ETAT;4;Indisponible;
+qualif;570;Autre;
+qualif;205;Collaborateur;
+qualif;210;Commentateur;
+qualif;310;"Distributeur, diffuseur";
+qualif;651;"Directeur de la publication";
+qualif;650;Editeur;
+qualif;440;Illustrateur;
+qualif;075;Postfacier;
+qualif;080;Préfacier;
+qualif;710;Rédacteur;
+qualif;730;Traducteur;
+qualif;020;Annotateur;
+qualif;723;Parraineur;
+qualif;675;"Responsable du compte-rendu critique";
+qualif;600;"Photographe, Directeur de la photographie";
+ETAT;5;"Non communicable";
+CAND;"Candidat descripteur";"Candidat descripteur";
+CAND;Rejeté;"Mot clé abandonné";
+COUNTRY;AN;"Antilles Néerlandaises";
+COUNTRY;CR;"Costa Rica";
+COUNTRY;ER;Erythrée;
+COUNTRY;FR;France;
+COUNTRY;DE;Allemagne;
+COUNTRY;CN;Chine;
+COUNTRY;IN;Inde;
+COUNTRY;IS;Islande;
+COUNTRY;NL;Pays-Bas;
+COUNTRY;PA;Panama;
+COUNTRY;RE;Réunion;
+COUNTRY;ES;Espagne;
+COUNTRY;US;Etats-Unis;
+COUNTRY;GB;Grande-Bretagne;
+COUNTRY;AD;Andorre;
+COUNTRY;AF;Afghanistan;
+COUNTRY;AL;Albanie;
+COUNTRY;AG;"Antigua et Barbuda";
+COUNTRY;AM;Arménie;
+COUNTRY;AO;Angola;
+COUNTRY;AQ;Antarctique;
+COUNTRY;AR;Argentine;
+COUNTRY;AS;"Samoa américaines";
+COUNTRY;AT;Autriche;
+COUNTRY;AU;Australie;
+COUNTRY;AW;Aruba;
+COUNTRY;AX;"Aland, îles d'";
+COUNTRY;AZ;Azerbaïdjan;
+COUNTRY;BA;"Bosnie Herzégovine";
+COUNTRY;BB;Barbade;
+COUNTRY;BD;Bangladesh;
+COUNTRY;BE;Belgique;
+COUNTRY;BF;"Burkina Faso";
+COUNTRY;BG;Bulgarie;
+COUNTRY;BH;Bahreïn;
+COUNTRY;BI;Burundi;
+COUNTRY;BJ;Bénin;
+COUNTRY;BM;Bermudes;
+COUNTRY;BN;Brunéi;
+COUNTRY;BO;Bolivie;
+COUNTRY;BR;Brésil;
+COUNTRY;BS;Bahamas;
+COUNTRY;BT;Bhoutan;
+COUNTRY;BV;"Bouvet, île";
+COUNTRY;BW;Botswana;
+COUNTRY;BY;Biélorussie;
+COUNTRY;BZ;Belize;
+COUNTRY;CA;Canada;
+COUNTRY;CC;"Cocos (Keeling), île des";
+COUNTRY;CD;"Congo, la République démocratique du";
+COUNTRY;CF;Centrafrique;
+COUNTRY;CG;Congo;
+COUNTRY;CH;Suisse;
+COUNTRY;CI;"Côte d'Ivoire";
+COUNTRY;CK;"Cook, îles";
+COUNTRY;CL;Chili;
+COUNTRY;CM;Cameroun;
+COUNTRY;CS;"Serbie et Monténégro";
+COUNTRY;CU;Cuba;
+COUNTRY;CV;"Cap Vert";
+COUNTRY;CX;"Christmas, île";
+COUNTRY;CY;Chypre;
+COUNTRY;CZ;"Tchèque, République";
+COUNTRY;DJ;Djibouti;
+COUNTRY;DK;Danemark;
+COUNTRY;DM;Dominique;
+COUNTRY;DO;"Dominicaine, République";
+COUNTRY;DZ;Algérie;
+COUNTRY;EC;Equateur;
+COUNTRY;EE;Estonie;
+COUNTRY;EG;Egypte;
+COUNTRY;EH;"Sahara occidental";
+COUNTRY;FI;Finlande;
+COUNTRY;FJ;Fidji;
+COUNTRY;FK;"Falkland, îles";
+COUNTRY;FM;Micronésie;
+COUNTRY;FO;"Féroé, îles";
+COUNTRY;GA;Gabon;
+COUNTRY;GD;Grenade;
+COUNTRY;GE;Géorgie;
+COUNTRY;GF;"Guyane française";
+COUNTRY;GH;Ghana;
+COUNTRY;GI;Gibraltar;
+COUNTRY;GL;Groenland;
+COUNTRY;GM;Gambie;
+COUNTRY;GP;Guadeloupe;
+COUNTRY;GN;Guinée;
+COUNTRY;GQ;"Guinée équatoriale";
+COUNTRY;GR;Grèce;
+COUNTRY;GS;"Géorgie du sud et les îles sandwich du Sud";
+COUNTRY;GT;Guatemala;
+COUNTRY;GU;Guam;
+COUNTRY;GW;"Guinée Bissau";
+COUNTRY;GY;Guyana;
+COUNTRY;HK;HongKong;
+COUNTRY;HM;"Heard et îles McDonald, île";
+COUNTRY;HN;Honduras;
+COUNTRY;HR;Croatie;
+COUNTRY;HT;Haïti;
+COUNTRY;HU;Hongrie;
+COUNTRY;ID;Indonésie;
+COUNTRY;IE;Irlande;
+COUNTRY;II;intergouvernemental;
+COUNTRY;IL;Israël;
+COUNTRY;IQ;Iraq;
+COUNTRY;IR;Iran;
+COUNTRY;IT;Italie;
+COUNTRY;JM;Jamaïque;
+COUNTRY;JO;Jordanie;
+COUNTRY;JP;Japon;
+COUNTRY;KE;Kenya;
+COUNTRY;KG;Kirghizistan;
+COUNTRY;KH;Cambodge;
+COUNTRY;KI;Kiribati;
+COUNTRY;KM;Comores;
+COUNTRY;KN;"Saint Kitts et Nevis";
+COUNTRY;KP;"Corée, République populaire démocratique de";
+COUNTRY;KR;"Corée, République de";
+COUNTRY;KW;Koweït;
+COUNTRY;KY;"Caïmanes, îles";
+COUNTRY;KZ;Kazakhstan;
+COUNTRY;LA;Lao;
+COUNTRY;LB;Liban;
+COUNTRY;LC;SainteLucie;
+COUNTRY;LI;Liechtenstein;
+COUNTRY;LK;"Sri Lanka";
+COUNTRY;LR;Libéria;
+COUNTRY;LS;Lesotho;
+COUNTRY;LT;Lituanie;
+COUNTRY;LU;Luxembourg;
+COUNTRY;LV;Lettonie;
+COUNTRY;LY;Lybie;
+COUNTRY;MA;Maroc;
+COUNTRY;MC;Monaco;
+COUNTRY;MD;Moldavie;
+COUNTRY;MG;Madagascar;
+COUNTRY;MH;"Marshall, îles";
+COUNTRY;MK;Macédoine;
+COUNTRY;ML;Mali;
+COUNTRY;MM;Myanmar;
+COUNTRY;MN;Mongolie;
+COUNTRY;MO;Macao;
+COUNTRY;MP;"Mariannes du Nord, îles";
+COUNTRY;MQ;Martinique;
+COUNTRY;MR;Mauritanie;
+COUNTRY;MS;Montserrat;
+COUNTRY;MT;Malte;
+COUNTRY;MU;Maurice;
+COUNTRY;MV;Maldives;
+COUNTRY;MW;Malawi;
+COUNTRY;MX;Mexique;
+COUNTRY;MY;Malaisie;
+COUNTRY;MZ;Mozambique;
+COUNTRY;NA;Namibie;
+COUNTRY;NC;Nouvelle-Calédonie;
+COUNTRY;NE;Niger;
+COUNTRY;NF;Norfolk;
+COUNTRY;NI;Nicaragua;
+COUNTRY;NO;Norvège;
+COUNTRY;NP;Népal;
+COUNTRY;NR;Nauru;
+COUNTRY;NU;Nioué;
+COUNTRY;NZ;Nouvelle-Zélande;
+COUNTRY;OM;Oman;
+COUNTRY;PE;Pérou;
+COUNTRY;PF;"Polynésie française";
+COUNTRY;PG;"Papouasie Nouvelle Guinée";
+COUNTRY;PH;Philippines;
+COUNTRY;PK;Pakistan;
+COUNTRY;PM;"Saint Pierre et Miquelon";
+COUNTRY;PN;Pitcairn;
+COUNTRY;PR;"Porto Rico";
+COUNTRY;PS;Palestine;
+COUNTRY;PT;Portugal;
+COUNTRY;PW;Palau;
+COUNTRY;PY;Paraguay;
+COUNTRY;QA;Qatar;
+COUNTRY;RO;Roumanie;
+COUNTRY;RU;Russie;
+COUNTRY;RW;Rwanda;
+COUNTRY;SA;"Arabie saoudite";
+COUNTRY;SB;"Salomon, îles";
+COUNTRY;SC;Seychelles;
+COUNTRY;SD;Soudan;
+COUNTRY;SE;Suède;
+COUNTRY;SG;Singapour;
+COUNTRY;SH;SainteHélène;
+COUNTRY;SI;Slovénie;
+COUNTRY;SJ;"Svalbard et île Jan Mayen";
+COUNTRY;SK;Slovaquie;
+COUNTRY;SL;"Sierra Leone";
+COUNTRY;SM;SaintMarin;
+COUNTRY;SN;Sénégal;
+COUNTRY;SO;Somalie;
+COUNTRY;SR;Suriname;
+COUNTRY;ST;"Sao Tomé et Principe";
+COUNTRY;SU;URSS;
+COUNTRY;SV;Salvador;
+COUNTRY;SY;Syrie;
+COUNTRY;SZ;Swaziland;
+COUNTRY;TC;"Turks et Caïques, îles";
+COUNTRY;TD;Tchad;
+COUNTRY;TG;Togo;
+COUNTRY;TH;Thaïlande;
+COUNTRY;TJ;Tadjikistan;
+COUNTRY;TK;Tokélau;
+COUNTRY;TL;"Timor oriental";
+COUNTRY;TM;Turkménistan;
+COUNTRY;TN;Tunisie;
+COUNTRY;TO;Tonga;
+COUNTRY;TR;Turquie;
+COUNTRY;TT;TrinitéetTobago;
+COUNTRY;TV;Tuvalu;
+COUNTRY;TW;Taïwan;
+COUNTRY;TZ;Tanzanie;
+COUNTRY;UA;Ukraine;
+COUNTRY;UG;Ouganda;
+COUNTRY;UM;"îles mineures éloignées des Etatsunis";
+COUNTRY;UY;Uruguay;
+COUNTRY;UZ;Ouzbékistan;
+COUNTRY;VA;Vatican;
+COUNTRY;VC;"Saint Vincent et les Grenadines";
+COUNTRY;VE;Venezuela;
+COUNTRY;VG;"Iles Vierges britanniques";
+COUNTRY;VI;"Iles Vierges (Etats-Unis)";
+COUNTRY;VN;"Viet Nam";
+COUNTRY;VU;Vanuatu;
+COUNTRY;WF;"Wallis et Futuna, îles";
+COUNTRY;WS;Samoa;
+COUNTRY;XC;Tchécoslovaquie;
+COUNTRY;XD;"Allemagne avant 1945";
+COUNTRY;XE;Europe;
+COUNTRY;XK;"Corée avant 1948";
+COUNTRY;YD;Yémen;
+COUNTRY;YU;Yougoslavie;
+COUNTRY;ZA;"Afrique du Sud";
+COUNTRY;ZM;Zambie;
+COUNTRY;ZW;Zimbabwe;
+COUNTRY;ZZ;multiple;
+qualif;370;Monteur;
+qualif;673;"Responsable de l'équipe de recherche";
+qualif;605;Présentateur;
+LANG;afr;afrikaans;
+LANG;akk;akkadien;
+LANG;amh;amharique;
+LANG;ang;"anglosaxon (ca. 4501100)";
+LANG;ara;arabe;
+LANG;arc;araméen;
+LANG;arm;arménien;
+LANG;bul;bulgare;
+LANG;chi;chinois;
+LANG;cop;copte;
+LANG;cze;tchèque;
+LANG;dan;danois;
+LANG;deu;Hollandais;
+LANG;dum;"néerlandais moyen (ca. 10501350)";
+LANG;dut;néerlandais;
+LANG;egy;egyptien;
+LANG;eng;anglais;
+LANG;esp;espéranto;
+LANG;fin;finnois;
+LANG;fre;français;
+LANG;frm;"français moyen (ca. 14001600)";
+LANG;fro;"français ancien (842ca. 1400)";
+LANG;ger;allemand;
+LANG;gmh;"allemand, moyen haut (ca. 10501500)";
+LANG;got;gothique;
+LANG;grc;"grec classique";
+LANG;gre;"grec moderne";
+LANG;heb;hébreu;
+LANG;hin;hindi;
+LANG;hun;hongrois;
+LANG;ind;indonésien;
+LANG;ine;"indoeuropéennes, autres";
+LANG;ita;italien;
+LANG;jpn;japonais;
+LANG;kor;coréen;
+LANG;oci;"occitan (post 1500)";
+LANG;lat;latin;
+LANG;map;"malayopolynésiennes, autres";
+LANG;mla;malgache;
+LANG;mul;multilingue;
+LANG;nic;"nigérocongolaises, autres";
+LANG;nor;norvégien;
+LANG;per;persan;
+LANG;pol;polonais;
+LANG;por;portugais;
+LANG;pro;"provencal ancien, occitan ancien (jusqu'à 1500)";
+LANG;rom;tzigane;
+LANG;rum;roumain;
+LANG;rus;russe;
+LANG;sam;samaritain;
+LANG;san;sanskrit;
+LANG;sem;"sémitique, autres langues";
+LANG;sla;"slave, autres langues";
+LANG;spa;espagnol;
+LANG;swe;suedois;
+LANG;syr;syriaque;
+LANG;tib;tibétain;
+LANG;tur;turc;
+LANG;uga;ougaritique;
+LANG;und;inconnue;
+LANG;yid;yiddish;
+qualif;070;"  Auteur";
+qualif;557;"Organisateur congrès";
+qualif;340;"Editeur scientifique";
+qualif;727;"Directeur de thèse";
+qualif;220;Compilateur;
+qualif;395;Fondateur;
+qualif;100;"Auteur oeuvre adaptée";
+qualif;230;Compositeur;
+qualif;520;Parolier;
+qualif;295;"Organisme de soutenance";
+qualif;010;Adaptateur;
+OUINON;0;Non;
+OUINON;1;Oui;
+LOC;ET1;"1er étage";
+LOC;ET1R;"1er étage réserve";
+LOC;ET2;"2e étage";
+LOC;ET2B;"2e étage bureau doc";
+LOC;ACC;Accueil;
+LOC;ARC;Architectes;
+LOC;ARCHI;Architecture;
+LOC;ARCHIV;Archives;
+LOC;ARCHIVNAT;"Archives nationales";
+LOC;ARP;Arpège;
+LOC;ART;Arts;
+LOC;ATDOC;"Atelier documentaire";
+LOC;AUD;Audiovisuel;
+LOC;BIB;Bibliothèque;
+LOC;BURB;"Bureau bas";
+LOC;BURDOC;"Bureau doc";
+LOC;BURH;"Bureau haut";
+LOC;BURI;"Bureau interne";
+LOC;CARTO;Cartothèque;
+LOC;CEART;"Centre d'art";
+LOC;DOC;"Centre de documentation";
+LOC;PASS;Passages;
+LOC;CONS;Construction;
+LOC;DSA;DSA;
+LOC;METIER;"Espace Métier";
+LOC;FA;"Fonds ancien";
+LOC;FC;"Fonds courant";
+LOC;FDIA;"Fonds diapos";
+LOC;FPA;"Fonds photo aérienne";
+LOC;FR;"Fonds régional";
+LOC;FTPFE;"Fonds TPFE";
+LOC;FTA;"Fonds travaux étudiants";
+LOC;GRECAU;GRECAU;
+LOC;HF;"Hors format";
+LOC;IPRAUS;IPRAUS;
+LOC;LARIA;"Labo ARIA";
+LOC;LARTOPOS;"Labo ARTOPOS";
+LOC;LSLA;LIFAM;
+LOC;LAB;Laboratoires;
+LOC;LA;"Libre accès";
+LOC;MAG;Magasin;
+LOC;MAG1;"Magasin 1";
+LOC;MAT;Matériauthèque;
+LOC;LIV;Monographies;
+LOC;NH;"Niveau haut";
+LOC;PAVE;PAVE;
+LOC;PAY;Paysage;
+LOC;PLA1;"Placard 1";
+LOC;RDCRES;"RDC Réserve";
+LOC;RECH;Recherche;
+LOC;RES;Réserve;
+LOC;RES1;"Réserve 1";
+LOC;RES2;"Réserve 2";
+LOC;RES3;"Réserve 3";
+LOC;RESMUR;"Réserve Mûrier";
+LOC;REV;Revues;
+LOC;RDC;"Rez de chaussée";
+LOC;S1;"Salle 1";
+LOC;SL;"Salle de lecture";
+LOC;SAOD;"Salle des archives/ouvrages doubles";
+LOC;SH;"Sciences humaines";
+LOC;SI;"Service informatique";
+LOC;SADM;"Services administratifs";
+LOC;TER;Territoire;
+LOC;URBA;Urbanisme;
+LOC;USU;Usuels;
+LOC;VIDEO;Vidéothèque;
+LOC;VIT;"Vitrine Prof";
+LOC;VRD;VRD;
+ccode;ART;"Article de revue";"Article de revue"
+ccode;CART;"Document cartographique";"Cartes, plans, photographies aériennes"
+ccode;DOCA;"Document projeté ou vidéo";"Document audiovisuel"
+ccode;DOCG;"Document graphique";"Document graphique, photographie"
+ccode;DOCP;"Document pédagogique";"Document pédagogique"
+ccode;DOCS;"Document sonore";"Document sonore"
+ccode;DOCTEC;"Document technique";"Document technique"
+ccode;DOS;Dossier;"Dossier de presse, dossier documentaire"
+ccode;ECH;"Échantillon";"Échantillon"
+ccode;LIV;Livre;"Livre, numéro de périodique"
+ccode;MEME;"Mémoire ENSA";"Mémoire ENSA"
+ccode;MEMU;"Mémoire universitaire";"Mémoire universitaire"
+ccode;MES;MES;MES
+ccode;PFE;PFE;PFE
+ccode;RAP;Rapport;Rapport
+ccode;RESELEC;"Support électronique";"Support électronique"
+ccode;REV;Revue;Revue
+ccode;THES;Thèse;Thèse
+ccode;TPFE;TPFE;TPFE
+ccode;TE;"Travaux d'étudiants";"Travaux d'étudiants"
+coll;FAV;"Fonds André";
+coll;FAUZ;"Fonds Auzelle";
+coll;FBV;"Fonds Beaudouin";
+coll;FCT;"Fonds Candilis ";
+coll;FGAV;"Fonds Gromort-Arretche ";
+coll;FH;"Fonds Huet";
+coll;FHA;"Fonds Huet ancien";
+coll;FPV;"Fonds Paulin ";
+coll;FVLV;"Fonds Vasseur-Loiseaux";
+ETAT;2;"En traitement";
+LOC;INC;Inconnu;
+AUT_LIEN;g;"Terme générique";
+AUT_LIEN;h;"Terme spécifique";
+LOC;ATM;"Atelier maquette";
+LOC;FREV;"Fonds revues";
+ETAT;6;"En commande";"En commande"
+LANG;baq;basque;
+LANG;cat;catalan;
+qualif;005;Acteur;Acteur
+qualif;040;Artiste;Artiste
+qualif;072;"Auteur des citations ou des fragments textuels";
+qualif;090;Dialoguiste;
+qualif;180;Cartographe;
+qualif;200;Chorégraphe;
+qualif;273;"Commissaire d'exposition";
+qualif;300;"Metteur en scène ou réalisateur";
+qualif;460;"Personne interviewée";
+qualif;470;Intervieweur;
+qualif;475;"Collectivité éditrice";
+qualif;550;Narrateur;
+qualif;595;"Directeur de la recherche";
+qualif;630;Producteur;
+qualif;690;Scénariste;
+qualif;695;"Conseiller scientifique";
+qualif;725;"Organisme de normalisation";
+qualif;770;"Auteur du matériel d'accompagnement";
+INVENTORY;BRDX;;
+INVENTORY;BRET;;
+INVENTORY;CLRF;;
+INVENTORY;GRNO;;
+INVENTORY;LILL;;
+INVENTORY;LYON;;
+INVENTORY;MALQ;;
+INVENTORY;MLVL;;
+INVENTORY;MOPL;;
+INVENTORY;MRSLD;17338;
+INVENTORY;NANT;;
+INVENTORY;NNCY;;
+INVENTORY;NRMD;;
+INVENTORY;PBLV;;
+INVENTORY;PLVT;;
+INVENTORY;PVDS;;
+INVENTORY;TOUL;25339;
+INVENTORY;VRSL;;
+INVENTORY;"MRSLC                ";13943;
+INVENTORY;MRSLX;3956;
+INVENTORY;MRSLA;46;
+INVENTORY;MRSLB;797;
+SYSTINDEX;rameau;RAMEAU;
+SYSTINDEX;urbamet;"thésaurus Urbamet";
+SYSTINDEX;frTAV;"Typologies audiovisuelles de la BNF";
+SYSTINDEX;ddc;Dewey;
+SYSTINDEX;udc;CDU;
+ccode;COLL;Collection;
+coll;FSENS;"Fonds sensibilisation";
+LOC;LRA;"Laboratoire de recherche en architecture (LRA)";
+LOC;ARCHIVDEP;"Archives départementales";
+coll;FEV;"Fonds Expert";
+LANG;alb;albanais;
+LANG;gle;irlandais;
+LANG;isl;islandais;
+LANG;lao;laotien;
+LANG;lit;lituanien;
+LOC;FAUZ;"Fonds Auzelle";
+LOC;FH;"Fonds Huet";
+LOC;FHA;"Fonds Huet ancien";
+LOC;LLAU;"Labo LAURE";
+COUNTRY;CO;Colombie;
+LOC;SRV;"Serveur ENSA";
+INVENTORY;MRSLR;536;
+LOC;LIGNE;"En ligne";
+ETAT;7;"Consultable en ligne";
+LANG;hrv;croate;
+LANG;srp;serbe;
+COUNTRY;PL;Pologne;
+LANG;;;
+LANG;bre;breton;
+qualif;245;Concepteur;Concepteur
+qualif;250;"Chef d'orchestre";
+qualif;275;Danseur;
+qualif;632;"Directeur artistique";
+qualif;633;"Membre de l'équipe de production";
+qualif;655;Marionnettiste;
+qualif;670;"Ingénieur du son";
+qualif;721;Chanteur;
+LOC;FBD;"Fonds BD";"Fonds BD"
+coll;FDUB;"Fonds Dubourg";
+SIP_MEDIA_TYPE;000;Other;
+SIP_MEDIA_TYPE;001;Book;
+SIP_MEDIA_TYPE;002;Magazine;
+SIP_MEDIA_TYPE;003;"Bound journal";
+SIP_MEDIA_TYPE;004;"Audio tape";
+SIP_MEDIA_TYPE;005;"Video tape";
+SIP_MEDIA_TYPE;006;CD/CDROM;
+SIP_MEDIA_TYPE;007;Diskette;
+SIP_MEDIA_TYPE;008;"Book with diskette";
+SIP_MEDIA_TYPE;009;"Book with CD";
+SIP_MEDIA_TYPE;010;"Book with audio tape";
+ORDER_CANCELLATION_REASON;0;"Pas de motif d'annulation";
+ORDER_CANCELLATION_REASON;1;Epuisé;
+ORDER_CANCELLATION_REASON;2;"En attente de réassort";
+SUGGEST_FORMAT;CDRA;"Communication restreinte";"Communication restreinte"
+SUGGEST_FORMAT;DPC;"Document prêt court";"Document prêt court"
+SUGGEST_FORMAT;DPL;"Document prêt long";"Document prêt long"
+SUGGEST_FORMAT;DOCAU;"Documents audiovisuels";"Documents audiovisuels"
+SUGGEST_FORMAT;CARTO;"Documents cartographiques";"Documents cartographiques"
+SUGGEST_FORMAT;DOCTEC;"Documents techniques";"Documents techniques"
+SUGGEST_FORMAT;INC;Inconnu;Inconnu
+SUGGEST_FORMAT;LIV;Livre;Livre
+SUGGEST_FORMAT;REV;Revue;Revue
+SUGGEST_FORMAT;TEL;Téléchargement;Téléchargement
+SUGGEST_FORMAT;TEST;"test ensa";"test ensa"
+SUGGEST_FORMAT;TE;"Travaux d'étudiants";"Travaux d'étudiants"
+coll;FBAB;"Fonds Beaux-Arts de Bordeaux";
+coll;MBAB;"Musée des Beaux-Arts de Bordeaux";
+coll;FAGD;"Fonds A. G. Dubois";
+coll;FDM;"Fonds D. Mons";
+coll;FR;"Fonds Rul";
+LOC;DPEA;DPEA;
+LOC;PLA;Placard;
+coll;FBOU;"Fonds Bourgon";
+coll;MA;"Master anglophone";
+LOC;RESC;"Réserve de cours";
+LANG;slo;slovaque;
+coll;FLAJ;"Fonds Lajus";
+LOC;FJA;"Fonds Jean Aubert";
+qualif;350;Graveur;
+qualif;410;"Technicien graphique";
+qualif;510;Lithographe;
+coll;SEV;"Sélection Ecrire la ville";
+LOC;ATB;"Atelier Bois";
+ccode;REVELEC;"Revue électronique";"Revue électronique"
+coll;FMS;"Fonds Madeleine Simonet";"Fonds Madeleine Simonet"
+coll;FFF;"Fonds Franck Sabatier";"Fonds Franck Sabatier"
+coll;FRECH;"Fonds Recherche";
+coll;FBG;"Fonds Body-Gendrot";
+ccode;MULT;"Multiméda multisupport";
+coll;FAN;"Fonds ancien";
+LOC;FAR;"Fonds ancien réserve";
+LOC;REVR;"Revues réserve";
+LOC;REVV;"Revues vitrine";
+LOC;FTAT;"Fonds travaux d'atelier";
+LOC;LABO;"Laboratoire de recherche";
+LOC;FGUE;"Fonds Guerrand";
+LOC;MP1;"Meuble à plans 1";
+LOC;MP2;"Meuble à plans 2";
+LOC;MP3;"Meuble à plans 3";
+LOC;MP4;"Meuble à plans 4";
+LOC;MP5;"Meuble à plans 5";
+coll;FLAU;"Fonds Laure";
+coll;FJUN;"Fonds Jungmann";
+CODEPEB;a;"en acquisition";
+CODEPEB;b;"consultable sur place dans l’établissement demandeur";
+CODEPEB;f;"disponible sous forme de reproduction pour le prêt entre bibliothèques";
+CODEPEB;g;"non disponible pour le prêt entre bibliothèques";
+CODEPEB;s;"disponible pour le prêt entre bibliothèques SOUS CONDITION";
+CODEPEB;u;"disponible pour le prêt entre bibliothèques";
+RCR;352382318;"ENSA de Bretagne";
+RCR;631132303;"ENSA de Clermont-Ferrand";
+RCR;381855105;"ENSA de Grenoble";
+RCR;692562302;"ENSA de Lyon";
+RCR;774682305;"ENSA de Paris-Est";
+RCR;130552319;"ENSA de Marseille";
+RCR;341722325;"ENSA de Montpellier";
+RCR;543952305;"ENSA de Nancy";
+RCR;762122301;"ENSA de Normandie";
+RCR;751192301;"ENSA de Paris-Belleville";
+RCR;751192302;"ENSA de Paris-La Villette";
+RCR;751062311;"ENSA de Paris-Malaquais";
+RCR;751132309;"ENSA de Paris-Val de Seine";
+RCR;315552357;"ENSA de Toulouse";
+RCR;786462302;"ENSA de Versailles";
+RCR;335222303;"ENSAP de Bordeaux";
+RCR;590092301;"ENSAP de Lille";
+coll;FEM;"Femmes et architecture";
+coll;FDUF;"Fonds Dufau";
+ETAT;8;"Manquant inventaire";
+qualif;640;"Correcteur sur épreuves";
+HSBND_FREQ;EW;"Every week";
+146a;a;"Musique vocale a cappella";
+146a;b;"Musique instrumentale";
+146a;c;"Musique vocale et instrumentale";
+146a;d;"Musique électroacoustique";
+146a;e;"Musique mixée";
+146a;u;"Variable indéfinie";
+146a;z;Autre;
+181a;a;"Jeu de données";
+181a;b;Image;
+181a;c;Mouvement;
+181a;d;Musique;
+181a;e;Objet;
+181a;f;Programme;
+181a;g;Son;
+181a;h;"Mot parlé";
+181a;i;Texte;
+181a;m;Multimédia;
+181a;z;"Autre médiation";
+181c;cri;"Carte géographique";
+181c;crm;"Carte géographique animée";
+181c;crt;"Carte géographique en braille ou autre";
+181c;crn;"Carte géographique en relief en braille ou autre";
+181c;cod;Données;
+181c;crd;"Données cartographiques";
+181c;crf;"Globe  carte géographique en relief ou autre objet cartographique";
+181c;tdi;"Images animées";
+181c;tdm;"Images animées en 3D";
+181c;sti;"Image fixe ";
+181c;tci;"Image tactile";
+181c;prm;"Musique exécutée";
+181c;ntv;"Notation chorégraphique ou scénique";
+181c;tcn;"Notation chorégraphique ou scénique tactile";
+181c;tdf;Objet;
+181c;tcf;"Objet tactile";
+181c;ntm;"Partition ";
+181c;tcm;"Partition en braille ou autre";
+181c;cop;Programme;
+181c;snd;"Sons enregistrés";
+181c;txt;"Texte ";
+181c;tct;"Texte en braille ou autre";
+181c;spw;"Texte enregistré";
+181c;xxx;"Non précisé";
+182a;a;Audio;
+182a;b;Electronique;
+182a;c;Microforme;
+182a;d;Microscopique;
+182a;e;Projeté;
+182a;f;Stéréoscopique;
+182a;g;Vidéo;
+182a;m;Multimédia;
+182a;n;"Sans médiation";
+182a;z;"Autre médiation";
+182c;s;audio;
+182c;c;informatique;
+182c;h;microforme;
+182c;p;microscopique;
+182c;g;projeté;
+182c;e;stéréoscopique;
+182c;v;vidéo;
+182c;x;"non précisé";
+182c;n;"sans médiation";
+183a;saa;"Bande magnétique audio";
+183a;sac;"Bande perforée pour instrument mécanique";
+183a;sbb;"Bande TEFI";
+183a;seg;"Blu-ray audio";
+183a;sab;"Bobine de piste sonore";
+183a;sba;"Cartouche audio";
+183a;sca;"Cassette audio analogique";
+183a;scb;"Cassette audio numérique";
+183a;sea;"CD audio";
+183a;seb;CD-Extra;
+183a;sda;"Cylindre phonographique";
+183a;sec;"Disque audio";
+183a;sed;"DVD audio";
+183a;see;"Feuille acoustique";
+183a;sdb;"Fil magnétique";
+183a;sef;MiniDisc;
+183a;sdc;"Ruban métallique magnétique";
+183a;saz;"SUPPORT audio générique";
+183a;szz;"Autre SUPPORT vidéo";
+183a;gab;"Bobine de film";
+183a;gac;"Cartouche de film fixe";
+183a;gad;Diapositive;
+183a;gae;"Film fixe";
+183a;gaf;"Film fixe court";
+183a;gaz;"Film ou transparent générique";
+183a;gba;"Plaque de lanterne magique";
+183a;gag;"Rouleau de film";
+183a;gah;"Transparent pour rétroprojecteur";
+183a;gzz;"Autre SUPPORT pour les images projetées";
+183a;cda;"Blu-ray disc";
+183a;cdb;"Blu-ray disc propriétaire";
+183a;caa;"Bobine de bande informatique";
+183a;cba;"Carte mémoire";
+183a;cbb;"Carte mémoire propriétaire";
+183a;cca;"Cartouche de jeu";
+183a;cab;"Cartouche informatique";
+183a;cac;"Cassette de bande informatique";
+183a;cdc;CD-I;
+183a;cdd;CD-Photo;
+183a;cde;CD-ROM;
+183a;cdf;"CD-ROM propriétaire";
+183a;cdg;CDTV;
+183a;cea;"Clé de licence de produit numérique";
+183a;cad;"Dispositif électronique autonome";
+183a;cdh;"Disque optique hybride";
+183a;cdi;Disquette;
+183a;cdj;"Disquette propriétaire";
+183a;cdk;DVD-ROM;
+183a;cdl;"DVD-ROM propriétaire";
+183a;cae;"Mémoire USB";
+183a;caf;"Puce RFID";
+183a;ceb;"Ressource dématérialisée";
+183a;caz;"SUPPORT numérique manipulable";
+183a;czz;"Autre SUPPORT électronique";
+183a;hba;"Bande de microfilm";
+183a;hbb;"Bobine de microfilm";
+183a;haa;"Carte à fenêtre";
+183a;hbc;"Cartouche de microfilm";
+183a;hab;"Cassette de microfiches";
+183a;hbd;"Cassette de microfilm";
+183a;had;Microfiche;
+183a;hbz;Microfilm;
+183a;haz;"Microforme générique";
+183a;hac;Micro-opaque;
+183a;hbe;"Rouleau de microfilm";
+183a;hzz;"Autre SUPPORT pour les microformes";
+183a;paa;"Lame pour microscope";
+183a;pzz;"Autre SUPPORT microscopique";
+183a;nea;"Appareil terme générique";
+183a;ndb;Autocollant;
+183a;nba;"Bande de film photographique";
+183a;nbb;"Bobine de film photographique";
+183a;ngb;Brochure;
+183a;naa;Carte;
+183a;ndc;Dépliant;
+183a;ngc;Fascicule;
+183a;nda;Feuille;
+183a;nbz;"Film photographique terme générique";
+183a;neb;Globe;
+183a;nec;Kit;
+183a;ned;Maquette;
+183a;nef;Matrice;
+183a;nez;Objet;
+183a;neg;"Objet numismatique";
+183a;neh;Panneau;
+183a;nei;"Panneau dépliant";
+183a;nej;Plaque;
+183a;nek;"Plaque photographique";
+183a;nel;"Plateau de jeu";
+183a;nfa;Rouleau;
+183a;nbc;"Rouleau de film photographique";
+183a;nca;"Tableau à feuilles mobiles";
+183a;ndd;Transparent;
+183a;nga;Volume;
+183a;nzz;"Autre SUPPORT sans médiation";
+183a;eaa;"Carte stéréoscopique";
+183a;eab;"Disque stéréoscopique";
+183a;eac;"Plaque stéréoscopique";
+183a;ezz;"Autre SUPPORT stéréoscopique";
+183a;vaa;"Bande vidéo";
+183a;vca;"Blu-ray vidéo";
+183a;vba;"Cassette vidéo";
+183a;vbb;"Cassette vidéo numérique";
+183a;vcb;"Disque vidéo";
+183a;vcc;"DVD vidéo";
+183a;vcd;"HD DVD";
+183a;vaz;Vidéo;
+183a;vce;"Vidéo CD";
+183a;vzz;"Autre SUPPORT vidéo";
+325h;0;"Reproduction incomplète";
+325h;1;"Reproduction complète";
+RCR;674822306;"ENSA de Strasbourg";
+RCR;422182306;"ENSA de Saint-Etienne";
+RCR;441092307;"ENSA de Nantes";
+LOC;CART;Quarantaine;
+LOC;LIT;"Littérature - BD";"Littérature - BD"
+ccode;ELIV;Ebook;Ebook
+ccode;ECART;"Document cartographique numérique";
+ccode;EDOCA;"Vidéo numérique";
+coll;FAENSBA;"Fonds ancien ENSBA";
+ccode;MHMONP;"Mémoire HMONP";
+LOC;PEDAGO;"Espace Pédagogie";
+COUNTRY;NG;Nigéria;
+TYPEDOC;ART;"Article de revue";"Article de revue"
+TYPEDOC;CART;"Document cartographique";"Cartes, plans, photographies aériennes"
+TYPEDOC;COLL;Collection;
+TYPEDOC;DOCA;"Document audiovisuel";"Document audiovisuel"
+TYPEDOC;DOCG;"Document graphique";"Document graphique, photographie"
+TYPEDOC;DOCP;"Document pédagogique";"Document pédagogique"
+TYPEDOC;DOCS;"Document sonore";"Document sonore"
+TYPEDOC;DOCTEC;"Document technique";"Document technique"
+TYPEDOC;DOS;Dossier;"Dossier de presse, dossier documentaire"
+TYPEDOC;ECART;"Document cartographique numérique";
+TYPEDOC;ECH;"Échantillon";"Échantillon"
+TYPEDOC;EDOCA;"Vidéo à la demande";"Vidéo à la demande"
+TYPEDOC;ELIV;Ebook;Ebook
+TYPEDOC;LIV;Livre;"Livre, numéro de périodique"
+TYPEDOC;MULT;"Multiméda multisupport";
+TYPEDOC;RAP;Rapport;Rapport
+TYPEDOC;RESELEC;"Support électronique";"Support électronique"
+TYPEDOC;REV;Revue;Revue
+TYPEDOC;REVELEC;"Revue électronique";"Revue électronique"
+TYPEDOC;TE;"Travaux d'étudiants";"Travaux d'étudiants"
+LOST;1;Perdu;
+LOST;2;"Non rendu";
+LANG;nya;nyanja;
+LANG;ori;oriya;
+LANG;oss;ossète;
+LANG;ota;"turc ottoman (écriture arabe)";
+LANG;paa;papou;
+LANG;pal;pahlavi;
+LANG;pan;penjabi;
+LANG;peo;"perse ancien (600-400 av. j.c.)";
+LANG;pli;pali;
+LANG;pra;prâkrit;
+LANG;pus;pachto;
+LANG;que;quechua;
+LANG;raj;rajasthani;
+LANG;roa;"romanes (diverses langues)";
+LANG;roh;"rhétoroman (groupe)";
+LANG;run;rundi;
+LANG;sah;iakoute;
+LANG;sai;"indiennes (langues amérique du sud)";
+LANG;scc;"serbe (cyrillique)";
+LANG;sco;écossais;
+LANG;scr;"croate (alphabet latin)";
+LANG;sga;"irlandais, ancien (jusqu'à 900)";
+LANG;sgn;"langues des signes";
+LANG;sin;singhalais;
+LANG;sit;"sino-tibétaines (langues)";
+LANG;slv;slovène;
+LANG;smi;"sames, langues";
+LANG;sna;shona;
+LANG;snh;singhalais;
+LANG;snk;soninké;
+LANG;som;somali;
+LANG;son;songhai;
+LANG;ssa;"nilo-saharien (groupe)";
+LANG;sun;soundanais;
+LANG;sux;sumérien;
+LANG;swa;swahili;
+LANG;tah;tahitien;
+LANG;tai;"thaï langues (autres)";
+LANG;tam;tamoul;
+LANG;tat;tatar;
+LANG;tel;télougou;
+LANG;tgk;tadjik;
+LANG;tgl;tagalog;
+LANG;tha;thaï;
+LANG;tir;tigrina;
+LANG;tuk;turkmène;
+LANG;tut;turco-tatar;
+LANG;twi;twi;
+LANG;uig;ouïgour;
+LANG;ukr;ukrainien;
+LANG;urd;ourdou;
+LANG;uzb;ouzbek;
+LANG;vie;vietnamien;
+LANG;wel;gallois;
+LANG;wen;wende;
+LANG;wln;wallon;
+LANG;wol;wolof;
+LANG;xal;kalmouk;
+LANG;xho;xhosa;
+LANG;xxx;"autres langues";
+LANG;yor;yoruba;
+LANG;zul;zoulou;
+LANG;zxx;"pas de contenu linguistique";
+LANG;lan;"occitan (post 1500)";
+COUNTRY;AI;"Anguilla (Royaume-Uni)";
+COUNTRY;BL;"Saint Barthélémy (France)";
+COUNTRY;AE;"Émirats arabes unis";
+COUNTRY;ME;Monténégro;
+COUNTRY;MF;"Saint Martin (partie française)";
+COUNTRY;RS;Serbie;
+COUNTRY;SS;"Soudan du Sud";
+COUNTRY;SX;"Saint Martin (partie néerlandaise)";
+COUNTRY;YT;"Mayotte (France)";
+qualif;000;"Fonction indéterminée";
+qualif;018;"Auteur de l'animation";
+qualif;030;"Arrangeur, auteur d'une réduction. ";
+qualif;050;"Nouveau détenteur du privilège";
+qualif;060;"Nom associé à l'exemplaire";
+qualif;065;Commissaire-priseur;
+qualif;110;Relieur;
+qualif;120;"Décorateur ou dessinateur de la reliure";
+qualif;130;Maquettiste;
+qualif;140;"Dessinateur de la jaquette";
+qualif;150;"Dessinateur de l'ex-libris";
+qualif;160;Libraire;
+qualif;170;Calligraphe;
+qualif;190;Censeur;
+qualif;195;"Chef de choeur";
+qualif;202;"Artiste de cirque";
+qualif;206;Collecteur;
+qualif;207;Humoriste;
+qualif;212;"Commentateur de texte écrit";
+qualif;233;"Compositeur de l'oeuvre adaptée";
+qualif;236;"Compositeur de l'oeuvre principale";
+qualif;240;"Compositeur typographe";
+qualif;255;"Consultant de projet";
+qualif;257;Continuateur;
+qualif;260;"Détenteur du copyright";
+qualif;270;"Correcteur (manuscrits)";
+qualif;280;Dédicataire;
+qualif;290;"Auteur d'une dédicace";
+qualif;303;"Disc jockey";
+qualif;305;Doctorant;
+qualif;320;Donateur;
+qualif;330;"Auteur présumé";
+qualif;360;Aquafortiste;
+qualif;365;"Expert (catalogue de vente)";
+qualif;380;Faussaire;
+qualif;390;"Ancien possesseur";
+qualif;400;Mécène;
+qualif;420;"Personne honorée";
+qualif;430;Enlumineur;
+qualif;445;Imprésario;
+qualif;450;"Auteur de l'envoi";
+qualif;480;Librettiste;
+qualif;490;"Détenteur de la licence";
+qualif;500;"Concédant de licence";
+qualif;530;"Graveur sur métal";
+qualif;535;Mime;
+qualif;540;Moniteur;
+qualif;545;Musicien;
+qualif;555;"Membre du jury";
+qualif;560;Instigateur;
+qualif;580;"Fabriquant du papier";
+qualif;582;"Demandeur du brevet";
+qualif;584;Inventeur;
+qualif;587;"Titulaire du brevet";
+qualif;590;Interprète;
+qualif;610;Imprimeur;
+qualif;620;"Imprimeur de gravures";
+qualif;635;Programmeur;
+qualif;637;"Chef de projet";
+qualif;660;"Destinataire de lettres";
+qualif;672;Remixeur;
+qualif;677;Chercheur;
+qualif;680;Rubricateur;
+qualif;700;Copiste;
+qualif;705;Sculpteur;
+qualif;720;Signataire;
+qualif;726;Cascadeur;
+qualif;740;"Concepteur de caractères";
+qualif;750;Typographe;
+qualif;753;Vendeur;
+qualif;755;"Exécutant vocal";
+qualif;760;"Graveur sur bois";
+qualif;571;Coordinateur;
+qualif;573;Diffuseur;
+qualif;574;Présentateur;
+qualif;575;Responsable;
+COUNTRY;;turq;
+AUT_LIEN;;"Marseille (Bouches-du-Rhône) -- Arrondissement (9e)";
+LOC;RBW;"Master RBW";
+ETAT;9;"Consultable sur place";
+LOC;ESC;"Escape game";
+coll;FESC;"Fonds escape game";
+TYPEDOC;JEU;Jeu;"Jeu pédagogique"
+LANG;ben;Bengali;
+coll;FGRE;"Fonds GRECAU";"Fonds GRECAU"
+coll;FMAP;"Fonds UMR MAP ASM";
+coll;DEFS;"Ex-Ecole d'architecture de Paris-La Défense";"Ex-Ecole d'architecture de Paris-La Défense"
+coll;SEIN;"Ex-Ecole d'architecture de Paris-La Seine";"Ex-Ecole d'architecture de Paris-La Seine"
+coll;TOLB;"Ex-Ecole d'architecture de Paris-Tolbiac";"Ex-Ecole d'architecture de Paris-Tolbiac"
+coll;PVDM;"Ex-Ecole d'architecture de Paris-Val de Marne";"Ex-Ecole d'architecture de Paris-Val de Marne"
+coll;VILM;"Ex-Ecole d'architecture de Paris-Villemin";"Ex-Ecole d'architecture de Paris-Villemin"
+coll;FJP;"Fonds jeunes publics";"Fonds jeunes publics"
+LOC;FHDUP;"Fonds Hervé Dupont";"Fonds Hervé Dupont"
+ORDER_CANCELLATION_REASON;3;"Réaffectation à un autre fournisseur";"Réaffectation à un autre fournisseu"
+coll;FLI;"Fonds LI2A";
+coll;FASM;"Fonds Architecture et sociétés montagnardes";
+diss;"""*_CCJP_*""";"CCJP (Concepteur et créateur de jardin dans le paysage)";"CCJP (Concepteur et créateur de jardin dans le paysage)"
+diss;"""*_CEAA_*""";"CEAA (Certificat d'études approfondies en architecture)";"CEAA (Certificat d'études approfondies en architecture)"
+diss;"""*_CESP_*""";"CESP (Certificat d'études supérieures paysagères)";"CESP (Certificat d'études supérieures paysagères)"
+diss;"""*_DPEA_*""";"DPEA (Diplôme propre aux ENSA)";"DPEA (Diplôme propre aux ENSA)"
+diss;"""*_DSA_*""";"DSA (Diplôme de spécialisation et d'approfondissement)";"DSA (Diplôme de spécialisation et d'approfondissement)"
+diss;"""*_MASTERE_*""";Mastère;Mastère
+diss;"""*_MES_*""";"Mémoire de master (MES)";"Mémoire de master (MES)"
+diss;"""*_MHMONP_*""";"Mémoire HMONP (Habilitation à la maîtrise d'œuvre en son nom propre)";"Mémoire HMONP (Habilitation à la maîtrise d'œuvre en son nom propre)"
+diss;"""*_MEMU_*""";"Mémoire universitaire";"Mémoire universitaire"
+diss;"""*_PFE_*""";"PFE (Projet de fin d'études)";"PFE (Projet de fin d'études)"
+diss;"""*_RAPL_*""";"Rapport d'études (Licence)";"Rapport d'études (Licence)"
+diss;"""*_TATE_*""";"Travaux d'ateliers";"Travaux d'ateliers"
+diss;"""*_THES_*""";Thèse;Thèse
+diss;"""*_TPFE_*""";"TPFE (Travail personnel de fin d'études)";"TPFE (Travail personnel de fin d'études)"
+qualif;003;"Encadrant académique";"Encadrant académique"
+ORDER_CANCELLATION_REASON;4;"Achat en numérique";"Achat en numérique"
+AR_CANCELLATION;NOT_FOUND;"Item could not be located on shelves";
+AR_CANCELLATION;DAMAGED;"Item was found to be too damaged to fill article request";
+AR_CANCELLATION;OPAC;"Cancelled from the OPAC user page";
+ERM_AGREEMENT_STATUS;active;Active;
+ERM_AGREEMENT_STATUS;in_negotiation;"In negotiation";
+ERM_AGREEMENT_STATUS;closed;Closed;
+ERM_AGREEMENT_CLOSURE_REASON;expired;Expired;
+ERM_AGREEMENT_CLOSURE_REASON;cancelled;Cancelled;
+ERM_AGREEMENT_RENEWAL_PRIORITY;for_review;"For review";
+ERM_AGREEMENT_RENEWAL_PRIORITY;renew;Renew;
+ERM_AGREEMENT_RENEWAL_PRIORITY;cancel;Cancel;
+ERM_LICENSE_TYPE;local;Local;
+ERM_LICENSE_TYPE;consortial;Consortial;
+ERM_LICENSE_TYPE;national;National;
+ERM_LICENSE_TYPE;alliance;Alliance;
+ERM_LICENSE_STATUS;in_negotiation;"In negotiation";
+ERM_LICENSE_STATUS;not_yet_active;"Not yet active";
+ERM_LICENSE_STATUS;active;Active;
+ERM_LICENSE_STATUS;rejected;Rejected;
+ERM_LICENSE_STATUS;expired;Expired;
+ERM_AGREEMENT_LICENSE_STATUS;controlling;Controlling;
+ERM_AGREEMENT_LICENSE_STATUS;future;Future;
+ERM_AGREEMENT_LICENSE_STATUS;history;Historic;
+ERM_AGREEMENT_LICENSE_LOCATION;filing_cabinet;"Filing cabinet";
+ERM_AGREEMENT_LICENSE_LOCATION;cupboard;Cupboard;
+ERM_USER_ROLES;librarian;"ERM librarian";
+ERM_USER_ROLES;subject_specialist;"Subject specialist";
+ERM_PACKAGE_TYPE;local;Local;
+ERM_PACKAGE_TYPE;complete;Complete;
+ERM_PACKAGE_CONTENT_TYPE;AggregatedFullText;"Aggregated full";
+ERM_PACKAGE_CONTENT_TYPE;AbstractAndIndex;"Abstract and index";
+ERM_PACKAGE_CONTENT_TYPE;EBook;E-book;
+ERM_PACKAGE_CONTENT_TYPE;MixedContent;"Mixed content";
+ERM_PACKAGE_CONTENT_TYPE;EJournal;E-journal;
+ERM_PACKAGE_CONTENT_TYPE;OnlineReference;"Online reference";
+ERM_PACKAGE_CONTENT_TYPE;Print;Print;
+ERM_PACKAGE_CONTENT_TYPE;StreamingMedia;"Streaming media";
+ERM_PACKAGE_CONTENT_TYPE;Unknown;Unknown;
+ERM_TITLE_PUBLICATION_TYPE;journal;Journal;
+ERM_TITLE_PUBLICATION_TYPE;newsletter;Newsletter;
+ERM_TITLE_PUBLICATION_TYPE;report;Report;
+ERM_TITLE_PUBLICATION_TYPE;proceedings;Proceedings;
+ERM_TITLE_PUBLICATION_TYPE;website;Website;
+ERM_TITLE_PUBLICATION_TYPE;newspaper;Newspaper;
+ERM_TITLE_PUBLICATION_TYPE;unspecified;Unspecified;
+ERM_TITLE_PUBLICATION_TYPE;book;Book;
+ERM_TITLE_PUBLICATION_TYPE;ebook;E-book;
+ERM_TITLE_PUBLICATION_TYPE;bookseries;Bookseries;
+ERM_TITLE_PUBLICATION_TYPE;database;Database;
+ERM_TITLE_PUBLICATION_TYPE;thesisdissertation;Thesis/Dissertation;
+ERM_TITLE_PUBLICATION_TYPE;streamingaudio;"Streaming audio";
+ERM_TITLE_PUBLICATION_TYPE;streamingvideo;"Streaming video";
+ERM_TITLE_PUBLICATION_TYPE;audiobook;AudioBook;
+ETAT;99;"Dans un groupe d'exemplaires";"Dans un groupe d'exemplaires"
+LOST;3;"Absent du groupe d'exemplaires";"Absent du groupe d'exemplaires"
+LOST;4;"Déclaré rendu";"Déclaré rendu"
+qualif;996;"École doctorale associée à la thèse";"École doctorale associée à la thèse"
+qualif;981;"Laboratoire associé à la thèse";"Laboratoire associé à la thèse"
+qualif;920;"Propriétaire actuel";"Propriétaire actuel"
+qualif;956;"Président du jury de soutenance";"Président du jury de soutenance"
+qualif;958;"Rapporteur de la thèse";"Rapporteur de la thèse"
+qualif;982;"Entreprise associée à la thèse";"Entreprise associée à la thèse"
+qualif;983;"Fondation associée à la thèse";"Fondation associée à la thèse"
+qualif;984;"Équipe de recherche associée à la thèse";"Équipe de recherche associée à la thèse"
+qualif;985;"Autre partenaire associé à la thèse";"Autre partenaire associé à la thèse"
+qualif;995;"Organisme de cotutelle";"Organisme de cotutelle"
+LOC;ECOL;"Écologie";"Écologie"
+LOC;POTA;Potager;Potager
+LOC;FPBLV;"Fonds Pinon";"Fonds Pinon"
+coll;FPBLV;"Fonds Pinon";"Fonds Pinon"
+coll;FPABLV;"Fonds Pinon ancien";"Fonds Pinon ancien"
+LOC;FPABLV;"Fonds Pinon ancien";"Fonds Pinon ancien"
+coll;FPAVE;"Fonds PAVE";"Fonds PAVE"
+branches;BRDX;"ENSAP de Bordeaux";"ENSAP de Bordeaux"
+branches;BRET;"ENSA de Bretagne";"ENSA de Bretagne"
+branches;CLRF;"ENSA de CLERMONT-FERRAND";"ENSA de CLERMONT-FERRAND"
+branches;DEFS;"ZZZEcole d'architecture de Paris-La Défense";"ZZZEcole d'architecture de Paris-La Défense"
+branches;GRNO;"ENSA de Grenoble";"ENSA de Grenoble"
+branches;IMVT;"IMVT (Marseille)";"IMVT (Marseille)"
+branches;IUAR;"IUAR (Marseille)";"IUAR (Marseille)"
+branches;LILL;"ENSAP de Lille";"ENSAP de Lille"
+branches;LYON;"ENSA de Lyon";"ENSA de Lyon"
+branches;MALQ;"ENSA de Paris-Malaquais";"ENSA de Paris-Malaquais"
+branches;MLVL;"ENSA de Paris-Est";"ENSA de Paris-Est"
+branches;MOPL;"ENSA de Montpellier";"ENSA de Montpellier"
+branches;MRSL;"ENSA de Marseille";"ENSA de Marseille"
+branches;NANT;"ENSA de Nantes";"ENSA de Nantes"
+branches;NNCY;"ENSA de Nancy";"ENSA de Nancy"
+branches;NRMD;"ENSA de Normandie";"ENSA de Normandie"
+branches;PART;"Partenaires Archirès";"Partenaires Archirès"
+branches;PAYM;"ENSP Marseille";"ENSP Marseille"
+branches;PAYV;"ENSP Versailles";"ENSP Versailles"
+branches;PBLV;"ENSA de Paris-Belleville";"ENSA de Paris-Belleville"
+branches;PLVT;"ENSA de Paris-La Villette";"ENSA de Paris-La Villette"
+branches;PVDM;"ZZZEcole d'architecture de Paris-Val de Marne ";"ZZZEcole d'architecture de Paris-Val de Marne "
+branches;PVDS;"ENSA de Paris-Val de Seine";"ENSA de Paris-Val de Seine"
+branches;SEIN;"ZZZEcole d'architecture de Paris-La Seine ";"ZZZEcole d'architecture de Paris-La Seine "
+branches;STET;"ENSA de Saint-Etienne";"ENSA de Saint-Etienne"
+branches;STRB;"ENSA de Strasbourg";"ENSA de Strasbourg"
+branches;TOLB;"ZZZEcole d'architecture de Paris-Tolbiac ";"ZZZEcole d'architecture de Paris-Tolbiac "
+branches;TOUL;"ENSA de Toulouse";"ENSA de Toulouse"
+branches;TSIT;"Tous sites";"Tous sites"
+branches;VILM;"ZZZEcole d'architecture de Paris-Villemin";"ZZZEcole d'architecture de Paris-Villemin"
+branches;VRSL;"ENSA de Versailles";"ENSA de Versailles"
+itemtypes;ART;Article;Article
+itemtypes;CARTO;"Documents cartographiques";"Documents cartographiques"
+itemtypes;CDRA;"Communication restreinte";"Communication restreinte"
+itemtypes;DOCAU;"Documents audiovisuels";"Documents audiovisuels"
+itemtypes;DOCTEC;"Documents techniques";"Documents techniques"
+itemtypes;DPC;"Document prêt court";"Document prêt court"
+itemtypes;DPL;"Document prêt long";"Document prêt long"
+itemtypes;LIV;Livre;Livre
+itemtypes;LIVM;"Livre Matériauthèque";"Livre Matériauthèque"
+itemtypes;RESC;"Réserve de cours";"Réserve de cours"
+itemtypes;REV;Revue;Revue
+itemtypes;TE;"Travaux d'étudiants";"Travaux d'étudiants"
+itemtypes;TEL;Téléchargement;Téléchargement

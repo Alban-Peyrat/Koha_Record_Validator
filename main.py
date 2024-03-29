@@ -200,6 +200,7 @@ class Errors(Enum):
     EMPTY_SUBFIELD = 108
     SUBFIELD_CONTENT_IS_ONLY_WHITESPACE = 109
     ILLEGAL_CONTROLED_VALUE = 110
+    DATAFIELD_WITHOUT_SUBFIELD = 111
 
 class Error_File_Headers(Enum):
     INDEX = "index"
@@ -430,7 +431,7 @@ for index, record in enumerate(MARC_READER):
         if len(record.get_fields(mandatory_f.tag)) == 0:
             trigger_error(index, record_id, Errors.MISSING_MANDATORY_FIELD, mandatory_f.tag, "", ERRORS_FILE)
 
-    # Non repeatable subfields
+    # Non repeatable fields
     for non_repeatable_f in NON_REPEATABLE_FIELDS:
         if len(record.get_fields(non_repeatable_f.tag)) > 1:
             trigger_error(index, record_id, Errors.NON_REPEATABLE_FIELD, non_repeatable_f.tag, f"Nb : {len(record.get_fields(non_repeatable_f.tag))}", ERRORS_FILE)
@@ -455,6 +456,14 @@ for index, record in enumerate(MARC_READER):
             trigger_error(index, record_id, Errors.UNMAPPED_FIELD, field.tag, str(field), ERRORS_FILE)
             continue #Skip to next field
 
+        # Controlfield content analysis
+        if field.is_control_field():
+            subfield_analysis(field, "", field.data, Field_Type.DATAFIELD)
+            continue # No need to end the script
+        else:
+            if len(field.subfields) < 1:
+                trigger_error(index, record_id, Errors.DATAFIELD_WITHOUT_SUBFIELD, field.tag, str(field), ERRORS_FILE)
+
         # Unmapped subfields
         for code in field.subfields_as_dict():
             if not get_field_from_tag(field.tag).is_code_valid(code):
@@ -464,13 +473,8 @@ for index, record in enumerate(MARC_READER):
             # Non repeatable subfield
             if not get_subfield_from_tag_code(field.tag, code).repeatable and len(field.subfields_as_dict()[code]) > 1:
                 trigger_error(index, record_id, Errors.NON_REPEATABLE_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
-        
-        # Controlfield content analysis
-        if field.is_control_field():
-            subfield_analysis(field, "", field.data, Field_Type.DATAFIELD)
-            continue # No need to end the script
 
-        # Datfield subfield content analysis
+        # Datafield subfield content analysis
         for index in range(0, len(field.subfields), 2):
             subfield_analysis(field, field.subfields[index], field.subfields[index+1], Field_Type.DATAFIELD)
 
