@@ -312,7 +312,7 @@ def trigger_error(index:int, id:str, error:Errors, txt:str, data:str, file:Error
     file.write(Error_obj(index, id, error, txt, data).to_dict())
 
 # ----- Subfield analysis -----
-def subfield_analysis(field:pymarc.field.Field, code:str, val:str, field_type:Field_Type):
+def subfield_analysis(field:pymarc.field.Field, code:str, val:str, field_type:Field_Type, record_index:int):
     """Subfield analysis (field can only be a str if iot's the leader)"""
     # Leader & control field management
     tag = "000"
@@ -329,15 +329,15 @@ def subfield_analysis(field:pymarc.field.Field, code:str, val:str, field_type:Fi
 
     # Empty subfield
     if val == "":
-        trigger_error(index, record_id, Errors.EMPTY_SUBFIELD, f"{tag} ${code}", str(field), ERRORS_FILE)
+        trigger_error(record_index, record_id, Errors.EMPTY_SUBFIELD, f"{tag} ${code}", str(field), ERRORS_FILE)
     # Whitespace only subfield content
     elif re.match("^\s+$", val):
-        trigger_error(index, record_id, Errors.SUBFIELD_CONTENT_IS_ONLY_WHITESPACE, f"{tag} ${code}", str(field), ERRORS_FILE)
+        trigger_error(record_index, record_id, Errors.SUBFIELD_CONTENT_IS_ONLY_WHITESPACE, f"{tag} ${code}", str(field), ERRORS_FILE)
 
     # Authorised values
     if subf_obj.uses_authorized_values():
         if not get_auth_val_from_id(subf_obj.auth_val).is_valid_val(val):
-            trigger_error(index, record_id, Errors.ILLEGAL_AUTHORIZED_VALUE, f"{tag} ${code} ({subf_obj.auth_val})", val, ERRORS_FILE)
+            trigger_error(record_index, record_id, Errors.ILLEGAL_AUTHORIZED_VALUE, f"{tag} ${code} ({subf_obj.auth_val})", val, ERRORS_FILE)
     
     # Controled values
     for cont_val in get_controled_values_for_tag_and_code(tag, code):
@@ -350,7 +350,7 @@ def subfield_analysis(field:pymarc.field.Field, code:str, val:str, field_type:Fi
                 position_err_msg = f"position : {cont_val.get_start_position()}"
             else:
                 position_err_msg = f"position : {cont_val.get_start_position()}-{cont_val.get_end_position()-1}"
-            trigger_error(index, record_id, Errors.ILLEGAL_CONTROLED_VALUE, f"{tag} ${code} {position_err_msg}", extracted_val, ERRORS_FILE)
+            trigger_error(record_index, record_id, Errors.ILLEGAL_CONTROLED_VALUE, f"{tag} ${code} {position_err_msg}", extracted_val, ERRORS_FILE)
 
 
 # ---------- Preparing Main ----------
@@ -405,10 +405,10 @@ with open(CONTROL_VALUES_FILE, mode="r+", encoding="utf-8") as f:
 
 # ---------- Main ----------
 # Loop through records
-for index, record in enumerate(MARC_READER):
+for record_index, record in enumerate(MARC_READER):
     # If record is invalid
     if record is None:
-        trigger_error(index, "", Errors.CHUNK_ERROR, "", "", ERRORS_FILE)
+        trigger_error(record_index, "", Errors.CHUNK_ERROR, "", "", ERRORS_FILE)
         continue # Fatal error, skipp
 
     # Gets the record ID
@@ -416,9 +416,9 @@ for index, record in enumerate(MARC_READER):
     if not record_id:
         # if no 001, check 035
         if not record["035"]:
-            trigger_error(index, "", Errors.NO_RECORD_ID, "No 001 or 035", "", ERRORS_FILE)
+            trigger_error(record_index, "", Errors.NO_RECORD_ID, "No 001 or 035", "", ERRORS_FILE)
         elif not record["035"]["a"]:
-            trigger_error(index, "", Errors.NO_RECORD_ID, "No 001 or 035$a", "", ERRORS_FILE)
+            trigger_error(record_index, "", Errors.NO_RECORD_ID, "No 001 or 035$a", "", ERRORS_FILE)
         else:
             record_id = record["035"]["a"]
 
@@ -429,54 +429,54 @@ for index, record in enumerate(MARC_READER):
             continue
         
         if len(record.get_fields(mandatory_f.tag)) == 0:
-            trigger_error(index, record_id, Errors.MISSING_MANDATORY_FIELD, mandatory_f.tag, "", ERRORS_FILE)
+            trigger_error(record_index, record_id, Errors.MISSING_MANDATORY_FIELD, mandatory_f.tag, "", ERRORS_FILE)
 
     # Non repeatable fields
     for non_repeatable_f in NON_REPEATABLE_FIELDS:
         if len(record.get_fields(non_repeatable_f.tag)) > 1:
-            trigger_error(index, record_id, Errors.NON_REPEATABLE_FIELD, non_repeatable_f.tag, f"Nb : {len(record.get_fields(non_repeatable_f.tag))}", ERRORS_FILE)
+            trigger_error(record_index, record_id, Errors.NON_REPEATABLE_FIELD, non_repeatable_f.tag, f"Nb : {len(record.get_fields(non_repeatable_f.tag))}", ERRORS_FILE)
 
     # Mandatory subfields
     for mandatory_subf in MANDATORY_SUBFIELDS:
         fields = record.get_fields(mandatory_subf.tag)
         if len(fields) == 0:
-            trigger_error(index, record_id, Errors.MISSING_FIELD_WITH_MANDATORY_SUBFIELD, f"{mandatory_subf.tag} for ${mandatory_subf.code}", "", ERRORS_FILE)
+            trigger_error(record_index, record_id, Errors.MISSING_FIELD_WITH_MANDATORY_SUBFIELD, f"{mandatory_subf.tag} for ${mandatory_subf.code}", "", ERRORS_FILE)
         for field in fields:
             if mandatory_subf.code not in field.subfields_as_dict():
-                trigger_error(index, record_id, Errors.MISSING_MANDATORY_SUBFIELD, f"{mandatory_subf.tag} ${mandatory_subf.code}", str(field), ERRORS_FILE)
+                trigger_error(record_index, record_id, Errors.MISSING_MANDATORY_SUBFIELD, f"{mandatory_subf.tag} ${mandatory_subf.code}", str(field), ERRORS_FILE)
 
     # Leader analysis
-    subfield_analysis(record.leader, "", record.leader, Field_Type.LEADER)
+    subfield_analysis(record.leader, "", record.leader, Field_Type.LEADER, record_index)
 
     # Field analysis
     for field in record.fields:
         field:pymarc.field.Field # VS PLEASE DETECT THE TYPE AAAAAAAAAAAAAAAAAh
         # Unmapped fields
         if not is_mapped_field(field.tag):
-            trigger_error(index, record_id, Errors.UNMAPPED_FIELD, field.tag, str(field), ERRORS_FILE)
+            trigger_error(record_index, record_id, Errors.UNMAPPED_FIELD, field.tag, str(field), ERRORS_FILE)
             continue #Skip to next field
 
         # Controlfield content analysis
         if field.is_control_field():
-            subfield_analysis(field, "", field.data, Field_Type.DATAFIELD)
+            subfield_analysis(field, "", field.data, Field_Type.DATAFIELD, record_index)
             continue # No need to end the script
         else:
             if len(field.subfields) < 1:
-                trigger_error(index, record_id, Errors.DATAFIELD_WITHOUT_SUBFIELD, field.tag, str(field), ERRORS_FILE)
+                trigger_error(record_index, record_id, Errors.DATAFIELD_WITHOUT_SUBFIELD, field.tag, str(field), ERRORS_FILE)
 
         # Unmapped subfields
         for code in field.subfields_as_dict():
             if not get_field_from_tag(field.tag).is_code_valid(code):
-                trigger_error(index, record_id, Errors.UNMAPPED_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
+                trigger_error(record_index, record_id, Errors.UNMAPPED_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
                 continue # Skip to next subfield
 
             # Non repeatable subfield
             if not get_subfield_from_tag_code(field.tag, code).repeatable and len(field.subfields_as_dict()[code]) > 1:
-                trigger_error(index, record_id, Errors.NON_REPEATABLE_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
+                trigger_error(record_index, record_id, Errors.NON_REPEATABLE_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
 
         # Datafield subfield content analysis
         for index in range(0, len(field.subfields), 2):
-            subfield_analysis(field, field.subfields[index], field.subfields[index+1], Field_Type.DATAFIELD)
+            subfield_analysis(field, field.subfields[index], field.subfields[index+1], Field_Type.DATAFIELD, record_index)
 
 MARC_READER.close()
 ERRORS_FILE.close()
