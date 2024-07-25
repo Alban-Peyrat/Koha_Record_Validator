@@ -9,6 +9,8 @@ This application uses a CSV export of Koha MARC framework to check if :
 * Non repeatable fields & subfields are not repeated
 * Authorized values limited subfields have legal values
 
+__Developped with `pymarc 4.2.2.`__, might not work with version `5` of the library.
+
 # Setting up
 
 You need to export from Koha :
