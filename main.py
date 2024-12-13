@@ -412,15 +412,15 @@ for record_index, record in enumerate(MARC_READER):
         continue # Fatal error, skipp
 
     # Gets the record ID
-    record_id = record["001"]
+    record_id = record.get("001")
     if not record_id:
         # if no 001, check 035
-        if not record["035"]:
+        if not record.get("035"):
             trigger_error(record_index, "", Errors.NO_RECORD_ID, "No 001 or 035", "", ERRORS_FILE)
-        elif not record["035"]["a"]:
+        elif not record.get("035").get("a"):
             trigger_error(record_index, "", Errors.NO_RECORD_ID, "No 001 or 035$a", "", ERRORS_FILE)
         else:
-            record_id = record["035"]["a"]
+            record_id = record.get("035").get("a")
 
     # Mandatory fields
     for mandatory_f in MANDATORY_FIELDS:
@@ -446,7 +446,7 @@ for record_index, record in enumerate(MARC_READER):
                 trigger_error(record_index, record_id, Errors.MISSING_MANDATORY_SUBFIELD, f"{mandatory_subf.tag} ${mandatory_subf.code}", str(field), ERRORS_FILE)
 
     # Leader analysis
-    subfield_analysis(record.leader, "", record.leader, Field_Type.LEADER, record_index)
+    subfield_analysis(record.leader, "", str(record.leader), Field_Type.LEADER, record_index)
 
     # Field analysis
     for field in record.fields:
@@ -475,8 +475,8 @@ for record_index, record in enumerate(MARC_READER):
                 trigger_error(record_index, record_id, Errors.NON_REPEATABLE_SUBFIELD, f"{field.tag} ${code}", str(field), ERRORS_FILE)
 
         # Datafield subfield content analysis
-        for index in range(0, len(field.subfields), 2):
-            subfield_analysis(field, field.subfields[index], field.subfields[index+1], Field_Type.DATAFIELD, record_index)
+        for subf in field.subfields:
+            subfield_analysis(field, subf.code, subf.value, Field_Type.DATAFIELD, record_index)
 
 MARC_READER.close()
 ERRORS_FILE.close()
